@@ -1,4 +1,4 @@
-//META{"name":"CodeBlocks","description":"Adds descriptions to any codeblock","author":"spthiel","version":"1.0.0"}*//
+//META{"name":"CodeBlock","description":"Adds descriptions to any codeblock","author":"spthiel","version":"1.0.0"}*//
 
 @import url("https://cdn.rawgit.com/spthiel/BetterDiscord/master/Themes/CodeBlocks/CodeBlocks.raw.css");
 
@@ -8,8 +8,8 @@
 	--des-abnf:			"Augmented Backus-Naru Form";
 	--des-accesslog:	"Access logs";
 	--des-actionscript:	"ActionScript";
-	--des-ada:			"Ada";
 	--des-arduino:		"Arduino";
+	--des-ada:			"Ada";
 	--des-armasm:		"ARM assembler";
 	--des-avrasm:		"AVR assembler";
 	--des-apache:		"Apache";
@@ -19,11 +19,11 @@
 	--des-autohotkey:	"AutoHotkey";
 	--des-autoit:		"AutoIt";
 	--des-awk:			"Awk";
-	--des-axapta:		"Axapta";
+	--des-axapta:		"axapta";
 	
 	--des-bash:         "Bash";
 	--des-basic:		"Basic";
-	--des-bnf:			"Backus-Naru Form";
+	--des-bnf:			"BNF";
 	--des-brainfuck:	"Brainfuck";
 	
 	--des-cs: 			"C#";
@@ -183,6 +183,12 @@
 	--des-default:		"Not defined";
 }
 
+/*
+	Uncomment to add text to default codeblocks
+
+.message-group .comment .markup pre code:before {content: var(--des-default);}
+*/
+
 .message-group .comment .markup pre code:before {
   
   position: relative;
@@ -194,6 +200,8 @@
   background-color: rgba(0,0,0,.5);
   border: 2px solid black;
   border-radius: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
   margin-bottom: 4px;
   
 }
