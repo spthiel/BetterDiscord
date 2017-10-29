@@ -1,0 +1,683 @@
+//META{"name":"CodeBlock","description":"Adds descriptions to any codeblock","author":"spthiel","version":"1.0.0"}*//
+
+:root {
+	--des-1c:			"1c";
+	
+	--des-abnf:			"Augmented Backus-Naru Form";
+	--des-accesslog:	"Access logs";
+	--des-actionscript:	"ActionScript";
+	--des-ada:			"Ada";
+	--des-armasm:		"ARM assembler";
+	--des-avrasm:		"AVR assembler";
+	--des-apache:		"Apache";
+	--des-applescript:	"AppleScript";
+	--des-asciidoc:		"AsciiDoc";
+	--des-AspectJ:		"aspectj";
+	--des-autohotkey:	"AutoHotkey";
+	--des-autoit:		"AutoIt";
+	--des-awk:			"Awk";
+	--des-axapta:		"axapta";
+	
+	--des-bash:         "Bash";
+	--des-basic:		"Basic";
+	--des-bnf:			"BNF";
+	--des-brainfuck:	"Brainfuck";
+	
+	--des-cs: 			"C#";
+	--des-cpp:			"C++";
+	--des-cal:			"C/AL";
+	--des-cos:			"Cached Object Script";
+	--des-cmake:		"CMake";
+	--des-coq:			"Coq";
+	--des-csp:			"CSP";
+	--des-css: 			"Cascading Stylesheet";
+	--des-capnproto:	"Cap'n Proto";
+	--des-clojure:		"Clojure";
+	--des-coffee: 		"CoffeeScript";
+	--des-crmsh:		"Crmsh";
+	--des-crystal:		"Crystal";
+	
+	--des-d:			"D";
+	--des-dns:			"DNS Zone Field";
+	--des-dos: 			"DOS";
+	--des-dart:			"Dart";
+	--des-delphi:		"Delphi";
+	--des-diff:			"Diff";
+	--des-django:		"Django";
+	--des-dockerfile:	"Dockerfile";
+	--des-dsconfig:		"dsconfig";
+	--des-dts:			"DTS (Device Tree)";
+	--des-dust:			"Dust";
+	
+	--des-ebnf:			"EBNF";
+	--des-elixir:		"Elixir";
+	--des-elm:			"Elm";
+	--des-erlang:		"Erlang";
+	--des-excel:		"Excel";
+	
+	--des-fsharp:		"F#";
+	--des-fix:			"Fix";
+	--des-fortran:		"Fortran";
+	
+	--des-gcode:		"G-Code";
+	--des-gams:			"Gams";
+	--des-gauss:		"GAUSS";
+	--des-gherkin:		"Gherkin";
+	--des-go:			"Go";
+	--des-golo:			"Golo";
+	--des-gradle:		"Gradle";
+	--des-groovy:		"Groovy";
+	
+	--des-html: 		"HTML";
+	--des-http: 		"HTTP";
+	--des-haml: 		"Haml";
+	--des-handlebars:	"Handlebars";
+	--des-haskell: 		"Haskell";
+	--des-haxe: 		"Haxe";
+	--des-hy: 			"Hy";
+	
+	--des-ini:			"Ini";
+	--des-inform7:		"Inform7";
+	--des-irpf90:		"IRPF90";
+	
+	--des-json: 		"JSON";
+	--des-java: 		"Java";
+	--des-js: 			"JavaScript";
+	
+	--des-leaf:			"Leaf";
+	--des-lasso: 		"Lasso";
+	--des-less: 		"Less";
+	--des-ldif:			"LDIF";
+	--des-lisp:			"Lisp";
+	--des-lcs:			"LiveCode Server";
+	--des-livescipt:	"LiveScript";
+	--des-lua: 			"LUA";
+	
+	--des-makefile: 	"Makefile";
+	--des-markdown: 	"Markdown";
+	--des-mathematica: 	"Mathematica";
+	--des-matlab: 		"Matlab";
+	--des-maxima: 		"Maxima";
+	--des-mel: 			"Maya Embedded Language";
+	--des-mercury: 		"Mercury";
+	--des-mizar: 		"Mizar";
+	--des-mojolicious: 	"Mojolicious";
+	--des-monkey: 		"Monkey";
+	--des-moonscript: 	"Moonscript";
+	
+	--des-n1ql:			"N1QL";
+	--des-nsis:			"NSIS";
+	--des-nginx:		"Nginx";
+	--des-nimrod:		"Nimrod";
+	--des-nix:			"Nix";
+	
+	--des-ocaml:		"OCaml";
+	--des-objectivec:	"Objective C";
+	--des-glsl:			"OpenGL Shading Language";
+	--des-openscad:		"OpenSCAD";
+	--des-ruleslang:	"Oracle Rules Language";
+	--des-oxygene:		"Oxygene";
+	
+	--des-pf: 			"PF";
+	--des-php: 			"PHP";
+	--des-parser3: 		"Parser3";
+	--des-perl: 		"Perl";
+	--des-pony: 		"Pony";
+	--des-powershell: 	"PowerShell";
+	--des-processing: 	"Processing";
+	--des-prolog: 		"Prolog";
+	--des-protobuf: 	"Protocol Buffers";
+	--des-puppet: 		"Puppet";
+	--des-python: 		"Python";
+	--des-profile: 		"Phyton profiler results";
+	
+	--des-k:			"Q";
+	--des-qml:			"qml";
+	
+	--des-r: 			"R";
+	--des-rib: 			"RenderMan RIB";
+	--des-rsl: 			"RenderMan RSL";
+	--des-graph: 		"Roboconf";
+	--des-ruby: 		"Ruby";
+	--des-rust: 		"Rust";
+	
+	--des-scss: 		"SCSS";
+	--des-sql: 			"SQL";
+	--des-p21: 			"STEP Part 21";
+	--des-scala: 		"Scala";
+	--des-scheme: 		"Scgene";
+	--des-scilab: 		"Scilab";
+	--des-shell: 		"Shell";
+	--des-smali: 		"Smali";
+	--des-smalltalk: 	"Smalltalk";
+	--des-stan: 		"Stan";
+	--des-stata: 		"Stata";
+	--des-stylus: 		"Stylus";
+	--des-subunit: 		"SubUnit";
+	--des-swift: 		"Swift";
+	
+	--des-tap:			"Test Anything Protocol";
+	--des-tcl:			"Tcl";
+	--des-tex:			"TeX";
+	--des-thrift:		"Thrift";
+	--des-tp:			"TP";
+	--des-twig:			"Twig";
+	--des-typescript:	"TypeScript";
+	
+	--des-vbnet:		"VB.Net";
+	--des-vbscript:		"VBScript";
+	--des-vhdl:			"VHDL";
+	--des-vala:			"Vala";
+	--des-verilog:		"Verilog";
+	--des-vim:			"Vim Script";
+	
+	--des-x86asm: 		"x86 Assembly";
+	--des-xl: 			"XL";
+	--des-xpath: 		"XQuery";
+	
+	--des-zephir:		"Zephir";
+	
+	--des-default:		"Not defined";
+}
+
+.message-group .comment .markup pre code:before {
+  
+  position: relative;
+  display: block;
+  top: 0;
+  text-align: center;	
+  width: auto;
+  color: rgba(255, 98, 98, 0.99);
+  background-color: rgba(0,0,0,.5);
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 4px;
+  
+}
+
+/***
+ *       _____                 _           _     
+ *      / ____|               | |         | |    
+ *     | (___  _   _ _ __ ___ | |__   ___ | |___ 
+ *      \___ \| | | | '_ ` _ \| '_ \ / _ \| / __|
+ *      ____) | |_| | | | | | | |_) | (_) | \__ \
+ *     |_____/ \__, |_| |_| |_|_.__/ \___/|_|___/
+ *              __/ |                            
+ *             |___/                             
+ */
+ 
+.message-group .comment .markup pre code:-webkit-any([class~="1c" i]):before{content:  var(--des-1c);}
+
+/***
+ *               
+ *         /\    
+ *        /  \   
+ *       / /\ \  
+ *      / ____ \ 
+ *     /_/    \_\
+ *               
+ *               
+ */
+
+.message-group .comment .markup pre code:-webkit-any([class~="abnf" i]):before{content:  var(--des-abnf);}
+.message-group .comment .markup pre code:-webkit-any([class~="accesslog" i]):before{content:  var(--des-accesslog);}
+.message-group .comment .markup pre code:-webkit-any([class~="actionscript" i],[class~="as" i]):before{content:  var(--des-actionscript);}
+.message-group .comment .markup pre code:-webkit-any([class~="ada" i]):before{content:  var(--des-ada);}
+.message-group .comment .markup pre code:-webkit-any([class~="armasm" i],[class~="arm" i]):before{content:  var(--des-armasm);}
+.message-group .comment .markup pre code:-webkit-any([class~="avrasm" i]):before{content:  var(--des-avrasm);}
+.message-group .comment .markup pre code:-webkit-any([class~="apache" i]):before{content:  var(--des-apache);}
+.message-group .comment .markup pre code:-webkit-any([class~="applescript" i],[class~="osascript" i]):before{content:  var(--des-applescript);}
+.message-group .comment .markup pre code:-webkit-any([class~="asciidoc" i],[class~="adoc" i]):before{content:  var(--des-asciidoc);}
+.message-group .comment .markup pre code:-webkit-any([class~="aspectj" i]):before{content:  var(--des-aspectj);}
+.message-group .comment .markup pre code:-webkit-any([class~="autohotkey" i]):before{content:  var(--des-autohotkey);}
+.message-group .comment .markup pre code:-webkit-any([class~="autoit" i]):before{content:  var(--des-autohotkey);}
+.message-group .comment .markup pre code:-webkit-any([class~="awk" i],[class~="mawk" i],[class~="nawk" i],[class~="gawk" i]):before{content:  var(--des-awk);}
+.message-group .comment .markup pre code:-webkit-any([class~="axapta" i]):before{content:  var(--des-axapta);}
+
+/***
+ *      ____  
+ *     |  _ \ 
+ *     | |_) |
+ *     |  _ < 
+ *     | |_) |
+ *     |____/ 
+ *            
+ *            
+ */
+
+.message-group .comment .markup pre code:-webkit-any([class~="bash" i],[class~="sh" i],[class~="zsh" i]):before{content:  var(--des-bash);}
+.message-group .comment .markup pre code:-webkit-any([class~="basic" i]):before{content:  var(--des-basic);}
+.message-group .comment .markup pre code:-webkit-any([class~="bnf" i]):before{content:  var(--des-bnf);}
+.message-group .comment .markup pre code:-webkit-any([class~="brainfuck" i],[class~="bf" i]):before{content:  var(--des-brainfuck);}
+
+/***
+ *       _____ 
+ *      / ____|
+ *     | |     
+ *     | |     
+ *     | |____ 
+ *      \_____|
+ *             
+ *             
+ */
+
+.message-group .comment .markup pre code:-webkit-any([class~="cs" i],[class~="csharp" i]):before{content:  var(--des-cs);}
+.message-group .comment .markup pre code:-webkit-any([class~="cpp" i],[class~="c" i],[class~="cc" i],[class~="h" i],[class~="c++" i],[class~="h++" i],[class~="hpp" i]):before{content:  var(--des-cpp);}
+.message-group .comment .markup pre code:-webkit-any([class~="cal" i]):before{content:  var(--des-cal);}
+.message-group .comment .markup pre code:-webkit-any([class~="cos" i],[class~="cls" i]):before{content:  var(--des-cos);}
+.message-group .comment .markup pre code:-webkit-any([class~="cmake" i]):before{content:  var(--des-cmake);}
+.message-group .comment .markup pre code:-webkit-any([class~="coq" i]):before{content:  var(--des-coq);}
+.message-group .comment .markup pre code:-webkit-any([class~="csp" i]):before{content:  var(--des-csp);}
+.message-group .comment .markup pre code:-webkit-any([class~="css" i]):before{content:  var(--des-css);}
+.message-group .comment .markup pre code:-webkit-any([class~="capnproto" i],[class~="capnp" i]):before{content:  var(--des-capnproto);}
+.message-group .comment .markup pre code:-webkit-any([class~="clojure" i],[class~="clj" i]):before{content:  var(--des-clojure);}
+.message-group .comment .markup pre code:-webkit-any([class~="coffee" i],[class~="coffeescript" i],[class~="cson" i],[class~="iced" i]):before{content:  var(--des-coffee);}
+.message-group .comment .markup pre code:-webkit-any([class~="crmsh" i],[class~="crm" i],[class~="pcmk" i]):before{content:  var(--des-crmsh);}
+.message-group .comment .markup pre code:-webkit-any([class~="crystal" i]):before{content:  var(--des-crystal);}
+
+/***
+ *      _____  
+ *     |  __ \ 
+ *     | |  | |
+ *     | |  | |
+ *     | |__| |
+ *     |_____/ 
+ *             
+ *             
+ */
+
+.message-group .comment .markup pre code:-webkit-any([class~="d" i]):before{content:  var(--des-d);}
+.message-group .comment .markup pre code:-webkit-any([class~="dns" i]):before{content:  var(--des-dns);}
+.message-group .comment .markup pre code:-webkit-any([class~="dos" i]):before{content:  var(--des-dos);}
+.message-group .comment .markup pre code:-webkit-any([class~="dart" i]):before{content:  var(--des-dart);}
+.message-group .comment .markup pre code:-webkit-any([class~="delphi" i],[class~="dpr" i],[class~="dfm" i],[class~="pas" i],[class~="pascal" i],[class~="freepascal" i],[class~="lazerus" i],[class~="lpr" i],[class~="lfm" i]):before{content:  var(--des-delphi);}
+.message-group .comment .markup pre code:-webkit-any([class~="diff" i],[class~="patch" i]):before{content:  var(--des-diff);}
+.message-group .comment .markup pre code:-webkit-any([class~="django" i],[class~="jinja" i]):before{content:  var(--des-django);}
+.message-group .comment .markup pre code:-webkit-any([class~="dockerfile" i],[class~="docker" i]):before{content:  var(--des-dockerfile);}
+.message-group .comment .markup pre code:-webkit-any([class~="dsconfig" i]):before{content:  var(--des-dsconfig);}
+.message-group .comment .markup pre code:-webkit-any([class~="dts" i]):before{content:  var(--des-dts);}
+.message-group .comment .markup pre code:-webkit-any([class~="dust" i],[class~="dst" i]):before{content:  var(--des-dust);}
+
+/***
+ *      ______ 
+ *     |  ____|
+ *     | |__   
+ *     |  __|    
+ *     | |____ 
+ *     |______|
+ *             
+ *             
+ */
+
+.message-group .comment .markup pre code:-webkit-any([class~="ebnf" i]):before{content:  var(--des-ebnf);}
+.message-group .comment .markup pre code:-webkit-any([class~="elixir" i]):before{content:  var(--des-elixir);}
+.message-group .comment .markup pre code:-webkit-any([class~="elm" i]):before{content:  var(--des-elm);}
+.message-group .comment .markup pre code:-webkit-any([class~="erlang" i],[class~="erl" i]):before{content:  var(--des-erlang);}
+.message-group .comment .markup pre code:-webkit-any([class~="excel" i],[class~="xls" i],[class~="xlsx" i]):before{content:  var(--des-excel);}
+
+/***
+ *      ______ 
+ *     |  ____|
+ *     | |__   
+ *     |  __|  
+ *     | |     
+ *     |_|     
+ *             
+ *             
+ */
+
+.message-group .comment .markup pre code:-webkit-any([class~="fsharp" i],[class~="fs" i]):before{content:  var(--des-fsharp);}
+.message-group .comment .markup pre code:-webkit-any([class~="fix" i]):before{content:  var(--des-fix);}
+.message-group .comment .markup pre code:-webkit-any([class~="fortran" i],[class~="f90" i],[class~="f95" i]):before{content:  var(--des-fortran);}
+ 
+/***
+ *       _____ 
+ *      / ____|
+ *     | |  __ 
+ *     | | |_ |  
+ *     | |__| |
+ *      \_____|
+ *             
+ *             
+ */
+ 
+
+.message-group .comment .markup pre code:-webkit-any([class~="gcode" i],[class~="nc" i]):before{content:  var(--des-gcode);}
+.message-group .comment .markup pre code:-webkit-any([class~="gams" i],[class~="gms" i]):before{content:  var(--des-gams);}
+.message-group .comment .markup pre code:-webkit-any([class~="gauss" i],[class~="gss" i]):before{content:  var(--des-gauss);}
+.message-group .comment .markup pre code:-webkit-any([class~="gherkin" i]):before{content:  var(--des-gherkin);}
+.message-group .comment .markup pre code:-webkit-any([class~="go" i],[class~="golang" i]):before{content:  var(--des-go);}
+.message-group .comment .markup pre code:-webkit-any([class~="golo" i],[class~="gololang" i]):before{content:  var(--des-golo);}
+.message-group .comment .markup pre code:-webkit-any([class~="gradle" i]):before{content:  var(--des-gradle);}
+.message-group .comment .markup pre code:-webkit-any([class~="groovy" i]):before{content:  var(--des-groovy);}
+ 
+/***
+ *      _    _ 
+ *     | |  | |
+ *     | |__| |
+ *     |  __  |
+ *     | |  | |
+ *     |_|  |_|
+ *             
+ *             
+ */
+ 
+.message-group .comment .markup pre code:-webkit-any([class~="html" i],[class~="xml" i],[class~="xhtml" i],[class~="rss" i],[class~="atom" i],[class~="xjb" i],[class~="xsd" i],[class~="xsl" i],[class~="plist" i]):before{content:  var(--des-html);}
+.message-group .comment .markup pre code:-webkit-any([class~="http" i],[class~="https" i]):before{content:  var(--des-http);}
+.message-group .comment .markup pre code:-webkit-any([class~="haml" i]):before{content:  var(--des-haml);}
+.message-group .comment .markup pre code:-webkit-any([class~="handlebars" i],[class~="hbs" i]):before{content:  var(--des-handlebars);}
+.message-group .comment .markup pre code:-webkit-any([class~="haskell" i],[class~="hs" i]):before{content:  var(--des-haskell);}
+.message-group .comment .markup pre code:-webkit-any([class~="haxe" i],[class~="hx" i]):before{content:  var(--des-haxe);}
+.message-group .comment .markup pre code:-webkit-any([class~="hy" i],[class~="hylang" i]):before{content:  var(--des-hy);}
+
+/***
+ *      _____ 
+ *     |_   _|
+ *       | |  
+ *       | |    
+ *      _| |_ 
+ *     |_____|
+ *            
+ *            
+ */
+
+.message-group .comment .markup pre code:-webkit-any([class~="ini" i]):before{content:  var(--des-ini);}
+.message-group .comment .markup pre code:-webkit-any([class~="inform7" i],[class~="i7" i]):before{content:  var(--des-inform7);}
+.message-group .comment .markup pre code:-webkit-any([class~="irpf90" i]):before{content:  var(--des-irpf90);}
+ 
+/***
+ *           _ 
+ *          | |
+ *          | |
+ *      _   | |
+ *     | |__| |
+ *      \____/ 
+ *             
+ *             
+ */
+ 
+.message-group .comment .markup pre code:-webkit-any([class~="json" i]):before{content:  var(--des-json);}
+.message-group .comment .markup pre code:-webkit-any([class~="java" i],[class~="jsp" i]):before{content:  var(--des-java);}
+.message-group .comment .markup pre code:-webkit-any([class~="js" i],[class~="javascript" i],[class~="jsx" i]):before{content:  var(--des-js);}
+
+/***
+ *      _  __
+ *     | |/ /
+ *     | ' / 
+ *     |  <  
+ *     | . \ 
+ *     |_|\_\
+ *           
+ *           
+ */
+
+/***
+ *      _      
+ *     | |     
+ *     | |     
+ *     | |     
+ *     | |____ 
+ *     |______|
+ *             
+ *             
+ */
+
+.message-group .comment .markup pre code:-webkit-any([class~="leaf" i]):before{content:  var(--des-leaf);}
+.message-group .comment .markup pre code:-webkit-any([class~="lasso" i],[class~="lassoscript" i]):before{content:  var(--des-lasso);}
+.message-group .comment .markup pre code:-webkit-any([class~="less" i]):before{content:  var(--des-less);}
+.message-group .comment .markup pre code:-webkit-any([class~="ldif" i]):before{content:  var(--des-ldif);}
+.message-group .comment .markup pre code:-webkit-any([class~="lisp" i]):before{content:  var(--des-lisp);}
+.message-group .comment .markup pre code:-webkit-any([class~="livecodeserver" i]):before{content:  var(--des-lcs);}
+.message-group .comment .markup pre code:-webkit-any([class~="livescipt" i],[class~="ls" i]):before{content:  var(--des-livescipt);}
+.message-group .comment .markup pre code:-webkit-any([class~="lua" i]):before{content:  var(--des-lua);}
+
+/***
+ *      __  __ 
+ *     |  \/  |
+ *     | \  / |
+ *     | |\/| |  
+ *     | |  | |
+ *     |_|  |_|
+ *             
+ *             
+ */
+
+.message-group .comment .markup pre code:-webkit-any([class~="makefile" i],[class~="mk" i],[class~="mak" i]):before{content:  var(--des-makefile);}
+.message-group .comment .markup pre code:-webkit-any([class~="markdown" i],[class~="md" i],[class~="mkd" i],[class~="mkdown" i]):before{content:  var(--des-markdown);}
+.message-group .comment .markup pre code:-webkit-any([class~="mathematica" i],[class~="mma" i]):before{content:  var(--des-mathematica);}
+.message-group .comment .markup pre code:-webkit-any([class~="matlab" i]):before{content:  var(--des-matlab);}
+.message-group .comment .markup pre code:-webkit-any([class~="maxima" i]):before{content:  var(--des-maxima);}
+.message-group .comment .markup pre code:-webkit-any([class~="mel" i]):before{content:  var(--des-mel);}
+.message-group .comment .markup pre code:-webkit-any([class~="mercury" i]):before{content:  var(--des-mercury);}
+.message-group .comment .markup pre code:-webkit-any([class~="mizar" i]):before{content:  var(--des-mizar);}
+.message-group .comment .markup pre code:-webkit-any([class~="mojolicious" i]):before{content:  var(--des-mojolicious);}
+.message-group .comment .markup pre code:-webkit-any([class~="monkey" i]):before{content:  var(--des-monkey);}
+.message-group .comment .markup pre code:-webkit-any([class~="moonscript" i],[class~="moon" i]):before{content:  var(--des-moonscript);}
+ 
+/***
+ *      _   _ 
+ *     | \ | |
+ *     |  \| |
+ *     | . ` | 
+ *     | |\  |
+ *     |_| \_|
+ *            
+ *            
+ */
+ 
+.message-group .comment .markup pre code:-webkit-any([class~="n1ql" i]):before{content:  var(--des-n1ql);}
+.message-group .comment .markup pre code:-webkit-any([class~="nsis" i]):before{content:  var(--des-nsis);}
+.message-group .comment .markup pre code:-webkit-any([class~="nginx" i],[class~="nginxconf" i]):before{content:  var(--des-nginx);}
+.message-group .comment .markup pre code:-webkit-any([class~="nimrod" i],[class~="nim" i]):before{content:  var(--des-nimrod);}
+.message-group .comment .markup pre code:-webkit-any([class~="nix" i]):before{content:  var(--des-nix);}
+ 
+/***
+ *       ____  
+ *      / __ \ 
+ *     | |  | |
+ *     | |  | | 
+ *     | |__| |
+ *      \____/ 
+ *             
+ *             
+ */
+
+.message-group .comment .markup pre code:-webkit-any([class~="ocaml" i]):before{content:  var(--des-ocaml);}
+.message-group .comment .markup pre code:-webkit-any([class~="objectivec" i]):before{content:  var(--des-objectivec);}
+.message-group .comment .markup pre code:-webkit-any([class~="glsl" i]):before{content:  var(--des-glsl);}
+.message-group .comment .markup pre code:-webkit-any([class~="openscad" i]):before{content:  var(--des-openscad);}
+.message-group .comment .markup pre code:-webkit-any([class~="ruleslanguage" i]):before{content:  var(--des-ruleslang);}
+.message-group .comment .markup pre code:-webkit-any([class~="oxygene" i]):before{content:  var(--des-oxygene);} 
+
+/***
+ *      _____  
+ *     |  __ \ 
+ *     | |__) |
+ *     |  ___/ 
+ *     | |     
+ *     |_|     
+ *             
+ *             
+ */
+
+.message-group .comment .markup pre code:-webkit-any([class~="pf" i]):before{content:  var(--des-pf);}
+.message-group .comment .markup pre code:-webkit-any([class~="php" i],[class~="php3" i],[class~="php4" i],[class~="php5" i],[class~="php6" i]):before{content:  var(--des-php);}
+.message-group .comment .markup pre code:-webkit-any([class~="parser3" i]):before{content:  var(--des-parser3);}
+.message-group .comment .markup pre code:-webkit-any([class~="perl" i],[class~="pl" i],[class~="pm" i]):before{content:  var(--des-perl);}
+.message-group .comment .markup pre code:-webkit-any([class~="pony" i]):before{content:  var(--des-pony);}
+.message-group .comment .markup pre code:-webkit-any([class~="powershell" i],[class~="ps" i]):before{content:  var(--des-powershell);}
+.message-group .comment .markup pre code:-webkit-any([class~="processing" i]):before{content:  var(--des-processing);}
+.message-group .comment .markup pre code:-webkit-any([class~="prolog" i]):before{content:  var(--des-prolog);}
+.message-group .comment .markup pre code:-webkit-any([class~="protobuf" i]):before{content:  var(--des-protobuf);}
+.message-group .comment .markup pre code:-webkit-any([class~="puppet" i],[class~="pp" i]):before{content:  var(--des-puppet);}
+.message-group .comment .markup pre code:-webkit-any([class~="python" i],[class~="py" i],[class~="gyp" i]):before{content:  var(--des-python);}
+.message-group .comment .markup pre code:-webkit-any([class~="profile" i]):before{content:  var(--des-profile);}
+
+/***
+ *       ____  
+ *      / __ \ 
+ *     | |  | |
+ *     | |  | |
+ *     | |__| |
+ *      \___\_\
+ *             
+ *             
+ */
+ 
+.message-group .comment .markup pre code:-webkit-any([class~="k" i],[class~="kdb" i]):before{content:  var(--des-k);}
+.message-group .comment .markup pre code:-webkit-any([class~="qml" i]):before{content:  var(--des-qml);}
+ 
+/***
+ *      _____  
+ *     |  __ \ 
+ *     | |__) |
+ *     |  _  /  
+ *     | | \ \ 
+ *     |_|  \_\
+ *             
+ *             
+ */
+
+.message-group .comment .markup pre code:-webkit-any([class~="r" i]):before{content:  var(--des-r);}
+.message-group .comment .markup pre code:-webkit-any([class~="rib" i]):before{content:  var(--des-rib);}
+.message-group .comment .markup pre code:-webkit-any([class~="rsl" i]):before{content:  var(--des-rsl);}
+.message-group .comment .markup pre code:-webkit-any([class~="graph" i],[class~="instances" i]):before{content:  var(--des-graph);}
+.message-group .comment .markup pre code:-webkit-any([class~="ruby" i],[class~="rb" i],[class~="gemspec" i],[class~="podspec" i],[class~="thor" i],[class~="irb" i]):before{content:  var(--des-ruby);}
+.message-group .comment .markup pre code:-webkit-any([class~="rust" i],[class~="rs" i]):before{content:  var(--des-rust);}
+
+/***
+ *       _____ 
+ *      / ____|
+ *     | (___  
+ *      \___ \  
+ *      ____) |
+ *     |_____/ 
+ *             
+ *             
+ */
+
+.message-group .comment .markup pre code:-webkit-any([class~="scss" i]):before{content:  var(--des-scss);}
+.message-group .comment .markup pre code:-webkit-any([class~="sql" i]):before{content:  var(--des-sql);}
+.message-group .comment .markup pre code:-webkit-any([class~="p21" i],[class~="step" i],[class~="stp" i]):before{content:  var(--des-p21);}
+.message-group .comment .markup pre code:-webkit-any([class~="scala" i]):before{content:  var(--des-scala);}
+.message-group .comment .markup pre code:-webkit-any([class~="scheme" i]):before{content:  var(--des-scheme);}
+.message-group .comment .markup pre code:-webkit-any([class~="scilab" i],[class~="sci" i]):before{content:  var(--des-scilab);}
+.message-group .comment .markup pre code:-webkit-any([class~="shell" i],[class~="console" i]):before{content:  var(--des-shell);}
+.message-group .comment .markup pre code:-webkit-any([class~="smali" i]):before{content:  var(--des-smali);}
+.message-group .comment .markup pre code:-webkit-any([class~="smalltalk" i],[class~="st" i]):before{content:  var(--des-smalltalk);}
+.message-group .comment .markup pre code:-webkit-any([class~="stan" i]):before{content:  var(--des-stan);}
+.message-group .comment .markup pre code:-webkit-any([class~="stata" i]):before{content:  var(--des-stata);}
+.message-group .comment .markup pre code:-webkit-any([class~="stylus" i],[class~="styl" i]):before{content:  var(--des-stylus);}
+.message-group .comment .markup pre code:-webkit-any([class~="subunit" i]):before{content:  var(--des-subunit);}
+.message-group .comment .markup pre code:-webkit-any([class~="swift" i]):before{content:  var(--des-swift);}
+
+/***
+ *      _______ 
+ *     |__   __|
+ *        | |   
+ *        | |   
+ *        | |   
+ *        |_|   
+ *              
+ *              
+ */
+ 
+.message-group .comment .markup pre code:-webkit-any([class~="tap" i]):before{content:  var(--des-tap);}
+.message-group .comment .markup pre code:-webkit-any([class~="tcl" i],[class~="tk" i]):before{content:  var(--des-tcl);}
+.message-group .comment .markup pre code:-webkit-any([class~="tex" i]):before{content:  var(--des-tex);}
+.message-group .comment .markup pre code:-webkit-any([class~="thrift" i]):before{content:  var(--des-thrift);}
+.message-group .comment .markup pre code:-webkit-any([class~="tp" i]):before{content:  var(--des-tp);}
+.message-group .comment .markup pre code:-webkit-any([class~="twig" i],[class~="craftcms" i]):before{content:  var(--des-twig);}
+.message-group .comment .markup pre code:-webkit-any([class~="typescript" i],[class~="ts" i]):before{content:  var(--des-typescript);}
+ 
+/***
+ *      _    _ 
+ *     | |  | |
+ *     | |  | |
+ *     | |  | | 
+ *     | |__| |
+ *      \____/ 
+ *             
+ *             
+ */
+ 
+/***
+ *     __      __
+ *     \ \    / /
+ *      \ \  / / 
+ *       \ \/ /    
+ *        \  /   
+ *         \/    
+ *               
+ *               
+ */
+
+.message-group .comment .markup pre code:-webkit-any([class~="vbnet" i],[class~="vb" i]):before{content:  var(--des-vbnet);}
+.message-group .comment .markup pre code:-webkit-any([class~="vbscript" i],[class~="vbs" i]):before{content:  var(--des-vbscript);}
+.message-group .comment .markup pre code:-webkit-any([class~="vhdl" i]):before{content:  var(--des-vhdl);}
+.message-group .comment .markup pre code:-webkit-any([class~="vala" i]):before{content:  var(--des-vala);}
+.message-group .comment .markup pre code:-webkit-any([class~="verilog" i],[class~="v" i]):before{content:  var(--des-verilog);}
+.message-group .comment .markup pre code:-webkit-any([class~="vim" i]):before{content:  var(--des-vim);}
+ 
+/***
+ *     __          __
+ *     \ \        / /
+ *      \ \  /\  / /  
+ *       \ \/  \/ /  
+ *        \  /\  /   
+ *         \/  \/    
+ *                   
+ *                   
+ */
+ 
+/***
+ *     __   __
+ *     \ \ / /
+ *      \ V / 
+ *       > <  
+ *      / . \ 
+ *     /_/ \_\
+ *            
+ *            
+ */
+
+.message-group .comment .markup pre code:-webkit-any([class~="x86asm" i]):before{content:  var(--des-x86asm);}
+.message-group .comment .markup pre code:-webkit-any([class~="xl" i],[class~="tao" i]):before{content:  var(--des-xl);}
+.message-group .comment .markup pre code:-webkit-any([class~="xpath" i],[class~="xq" i]):before{content:  var(--des-xpath);}
+
+/***
+ *     __     __
+ *     \ \   / /
+ *      \ \_/ / 
+ *       \   /  
+ *        | |   
+ *        |_|   
+ *              
+ *              
+ */
+
+/***
+ *      ______
+ *     |___  /
+ *        / / 
+ *       / /  
+ *      / /__ 
+ *     /_____|
+ *            
+ *            
+ */
+
+.message-group .comment .markup pre code:-webkit-any([class~="zephir" i],[class~="zep" i]):before{content:  var(--des-zephir);} 
+ 
+/***
+ *      _____        __            _ _   
+ *     |  __ \      / _|          | | |  
+ *     | |  | | ___| |_ __ _ _   _| | |_ 
+ *     | |  | |/ _ \  _/ _` | | | | | __|
+ *     | |__| |  __/ || (_| | |_| | | |_ 
+ *     |_____/ \___|_| \__,_|\__,_|_|\__|
+ *                                       
+ *                                       
+ */
+
+.message-group .comment .markup pre code:before {content: var(--des-default);}
