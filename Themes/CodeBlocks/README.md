@@ -9,4 +9,4 @@ e.g.:
 
 ## Implemented:
 
-Copy anything except for the //META of CodeBlocks.theme.css into your theme and edit what you want except the @import
+Copy anything except for the //META part of CodeBlocks.theme.css into your theme and edit what you want except the @import
