@@ -1,5 +1,7 @@
 //META{"name":"CodeBlocks","description":"Adds descriptions to any codeblock","author":"spthiel","version":"1.0.0"}*//
 
+@import url("https://cdn.rawgit.com/spthiel/BetterDiscord/master/Themes/CodeBlocks/CodeBlocks.raw.css");
+
 :root {
 	--des-1c:			"1c";
 	
