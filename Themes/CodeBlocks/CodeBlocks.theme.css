@@ -9,6 +9,7 @@
 	--des-accesslog:	"Access logs";
 	--des-actionscript:	"ActionScript";
 	--des-ada:			"Ada";
+	--des-arduino:		"Arduino";
 	--des-armasm:		"ARM assembler";
 	--des-avrasm:		"AVR assembler";
 	--des-apache:		"Apache";
@@ -18,11 +19,11 @@
 	--des-autohotkey:	"AutoHotkey";
 	--des-autoit:		"AutoIt";
 	--des-awk:			"Awk";
-	--des-axapta:		"axapta";
+	--des-axapta:		"Axapta";
 	
 	--des-bash:         "Bash";
 	--des-basic:		"Basic";
-	--des-bnf:			"BNF";
+	--des-bnf:			"Backus-Naru Form";
 	--des-brainfuck:	"Brainfuck";
 	
 	--des-cs: 			"C#";

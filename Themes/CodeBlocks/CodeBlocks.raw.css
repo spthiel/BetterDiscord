@@ -30,6 +30,7 @@
 .message-group .comment .markup pre code:-webkit-any([class~="armasm" i],[class~="arm" i]):before{content:  var(--des-armasm);}
 .message-group .comment .markup pre code:-webkit-any([class~="avrasm" i]):before{content:  var(--des-avrasm);}
 .message-group .comment .markup pre code:-webkit-any([class~="apache" i]):before{content:  var(--des-apache);}
+.message-group .comment .markup pre code:-webkit-any([class~="arduino" i]):before{content:  var(--des-arduino);}
 .message-group .comment .markup pre code:-webkit-any([class~="applescript" i],[class~="osascript" i]):before{content:  var(--des-applescript);}
 .message-group .comment .markup pre code:-webkit-any([class~="asciidoc" i],[class~="adoc" i]):before{content:  var(--des-asciidoc);}
 .message-group .comment .markup pre code:-webkit-any([class~="aspectj" i]):before{content:  var(--des-aspectj);}
