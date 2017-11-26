@@ -93,7 +93,7 @@
 
 .message-group .comment .markup pre code:-webkit-any([class~="d" i]):before{content:  var(--des-d);}
 .message-group .comment .markup pre code:-webkit-any([class~="dns" i]):before{content:  var(--des-dns);}
-.message-group .comment .markup pre code:-webkit-any([class~="dos" i]):before{content:  var(--des-dos);}
+.message-group .comment .markup pre code:-webkit-any([class~="dos" i],[class~="bat" i],[class~="cmd" i]):before{content:  var(--des-dos);}
 .message-group .comment .markup pre code:-webkit-any([class~="dart" i]):before{content:  var(--des-dart);}
 .message-group .comment .markup pre code:-webkit-any([class~="delphi" i],[class~="dpr" i],[class~="dfm" i],[class~="pas" i],[class~="pascal" i],[class~="freepascal" i],[class~="lazerus" i],[class~="lpr" i],[class~="lfm" i]):before{content:  var(--des-delphi);}
 .message-group .comment .markup pre code:-webkit-any([class~="diff" i],[class~="patch" i]):before{content:  var(--des-diff);}
