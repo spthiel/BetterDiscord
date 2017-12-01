@@ -1,7 +1,7 @@
 
 .message-group .comment .markup pre code:before {
   
- content: 'Please update the CodeBlocks theme or ask the theme author to update it' !important;
+ content: 'Please update the CodeBlocks theme or ask the theme author of the theme you are using to update the import link.' !important;
   
 }
 
