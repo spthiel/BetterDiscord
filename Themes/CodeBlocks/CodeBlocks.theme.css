@@ -1,6 +1,6 @@
-//META{"name":"CodeBlock","description":"Adds descriptions to any codeblock","author":"spthiel","version":"1.0.0"}*//
+//META{"name":"CodeBlock","description":"Adds descriptions to any codeblock","author":"spthiel","version":"1.0.0"}*//{}
 
-@import url("https://rawgit.com/spthiel/BetterDiscord/master/Themes/CodeBlocks/CodeBlocks.raw.css");
+@import url(https://spthiel.github.io/css/CodeBlocks.raw.css);
 
 :root {
 	--des-1c:			"1c";
@@ -180,14 +180,8 @@
 	
 	--des-zephir:		"Zephir";
 	
-	--des-default:		"Not defined";
+	/*--des-default:	"Not defined";*/
 }
-
-/*
-	Uncomment to add text to default codeblocks
-
-.message-group .comment .markup pre code:before {content: var(--des-default);}
-*/
 
 .message-group .comment .markup pre code:before {
   
@@ -202,6 +196,7 @@
   border-radius: 5px;
   padding-top: 1px;
   padding-bottom: 1px;
+  margin-top: 0px !important;
   margin-bottom: 4px;
   
 }
