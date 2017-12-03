@@ -3,7 +3,7 @@
 @import url(https://spthiel.github.io/css/CodeBlocks.raw.css);
 
 :root {
-	--des-1c:			"1c";
+	--des-1c:			"1C";
 
 	--des-abnf:			"Augmented Backus-Naur Form";
 	--des-accesslog:	"Access logs";
@@ -15,11 +15,11 @@
 	--des-apache:		"Apache";
 	--des-applescript:	"AppleScript";
 	--des-asciidoc:		"AsciiDoc";
-	--des-AspectJ:		"aspectj";
+	--des-aspectj:		"AspectJ";
 	--des-autohotkey:	"AutoHotkey";
 	--des-autoit:		"AutoIt";
 	--des-awk:			"Awk";
-	--des-axapta:		"axapta";
+	--des-axapta:		"Axapta";
 
 	--des-bash:         "Bash";
 	--des-basic:		"Basic";
@@ -59,7 +59,7 @@
 	--des-excel:		"Excel";
 
 	--des-fsharp:		"F#";
-	--des-fix:			"Fix";
+	--des-fix:			"FIX";
 	--des-fortran:		"Fortran";
 
 	--des-gcode:		"G-Code";
@@ -94,7 +94,7 @@
 	--des-lisp:			"Lisp";
 	--des-lcs:			"LiveCode Server";
 	--des-livescipt:	"LiveScript";
-	--des-lua: 			"LUA";
+	--des-lua: 			"Lua";
 
 	--des-makefile: 	"Makefile";
 	--des-markdown: 	"Markdown";
@@ -135,7 +135,7 @@
 	--des-profile: 		"Phyton profiler results";
 
 	--des-k:			"Q";
-	--des-qml:			"qml";
+	--des-qml:			"QML";
 
 	--des-r: 			"R";
 	--des-rib: 			"RenderMan RIB";
@@ -148,7 +148,7 @@
 	--des-sql: 			"SQL";
 	--des-p21: 			"STEP Part 21";
 	--des-scala: 		"Scala";
-	--des-scheme: 		"Scgene";
+	--des-scheme: 		"Scheme";
 	--des-scilab: 		"Scilab";
 	--des-shell: 		"Shell";
 	--des-smali: 		"Smali";
@@ -180,7 +180,7 @@
 
 	--des-zephir:		"Zephir";
 
-	--des-default:		"Not defined";
+	/*--des-default:		"Not defined";*/
 }
 
 .message-group .comment .markup pre code:before {
