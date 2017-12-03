@@ -1,11 +1,11 @@
-//META{"name":"CodeBlock","description":"Adds descriptions to any codeblock","author":"spthiel","version":"1.1.0"}*//{}
+//META{"name":"CodeBlock","description":"Adds descriptions to any codeblock","author":"spthiel","version":"1.0.0"}*//
 
 @import url(https://spthiel.github.io/css/CodeBlocks.raw.css);
 
 :root {
 	--des-1c:			"1c";
-	
-	--des-abnf:			"Augmented Backus-Naru Form";
+
+	--des-abnf:			"Augmented Backus-Naur Form";
 	--des-accesslog:	"Access logs";
 	--des-actionscript:	"ActionScript";
 	--des-arduino:		"Arduino";
@@ -20,12 +20,12 @@
 	--des-autoit:		"AutoIt";
 	--des-awk:			"Awk";
 	--des-axapta:		"axapta";
-	
+
 	--des-bash:         "Bash";
 	--des-basic:		"Basic";
 	--des-bnf:			"BNF";
 	--des-brainfuck:	"Brainfuck";
-	
+
 	--des-cs: 			"C#";
 	--des-cpp:			"C++";
 	--des-cal:			"C/AL";
@@ -39,7 +39,7 @@
 	--des-coffee: 		"CoffeeScript";
 	--des-crmsh:		"Crmsh";
 	--des-crystal:		"Crystal";
-	
+
 	--des-d:			"D";
 	--des-dns:			"DNS Zone Field";
 	--des-dos: 			"DOS";
@@ -51,17 +51,17 @@
 	--des-dsconfig:		"dsconfig";
 	--des-dts:			"DTS (Device Tree)";
 	--des-dust:			"Dust";
-	
+
 	--des-ebnf:			"EBNF";
 	--des-elixir:		"Elixir";
 	--des-elm:			"Elm";
 	--des-erlang:		"Erlang";
 	--des-excel:		"Excel";
-	
+
 	--des-fsharp:		"F#";
 	--des-fix:			"Fix";
 	--des-fortran:		"Fortran";
-	
+
 	--des-gcode:		"G-Code";
 	--des-gams:			"Gams";
 	--des-gauss:		"GAUSS";
@@ -70,7 +70,7 @@
 	--des-golo:			"Golo";
 	--des-gradle:		"Gradle";
 	--des-groovy:		"Groovy";
-	
+
 	--des-html: 		"HTML";
 	--des-http: 		"HTTP";
 	--des-haml: 		"Haml";
@@ -78,15 +78,15 @@
 	--des-haskell: 		"Haskell";
 	--des-haxe: 		"Haxe";
 	--des-hy: 			"Hy";
-	
+
 	--des-ini:			"Ini";
 	--des-inform7:		"Inform7";
 	--des-irpf90:		"IRPF90";
-	
+
 	--des-json: 		"JSON";
 	--des-java: 		"Java";
 	--des-js: 			"JavaScript";
-	
+
 	--des-leaf:			"Leaf";
 	--des-lasso: 		"Lasso";
 	--des-less: 		"Less";
@@ -95,7 +95,7 @@
 	--des-lcs:			"LiveCode Server";
 	--des-livescipt:	"LiveScript";
 	--des-lua: 			"LUA";
-	
+
 	--des-makefile: 	"Makefile";
 	--des-markdown: 	"Markdown";
 	--des-mathematica: 	"Mathematica";
@@ -107,20 +107,20 @@
 	--des-mojolicious: 	"Mojolicious";
 	--des-monkey: 		"Monkey";
 	--des-moonscript: 	"Moonscript";
-	
+
 	--des-n1ql:			"N1QL";
 	--des-nsis:			"NSIS";
 	--des-nginx:		"Nginx";
 	--des-nimrod:		"Nimrod";
 	--des-nix:			"Nix";
-	
+
 	--des-ocaml:		"OCaml";
 	--des-objectivec:	"Objective C";
 	--des-glsl:			"OpenGL Shading Language";
 	--des-openscad:		"OpenSCAD";
 	--des-ruleslang:	"Oracle Rules Language";
 	--des-oxygene:		"Oxygene";
-	
+
 	--des-pf: 			"PF";
 	--des-php: 			"PHP";
 	--des-parser3: 		"Parser3";
@@ -133,17 +133,17 @@
 	--des-puppet: 		"Puppet";
 	--des-python: 		"Python";
 	--des-profile: 		"Phyton profiler results";
-	
+
 	--des-k:			"Q";
 	--des-qml:			"qml";
-	
+
 	--des-r: 			"R";
 	--des-rib: 			"RenderMan RIB";
 	--des-rsl: 			"RenderMan RSL";
 	--des-graph: 		"Roboconf";
 	--des-ruby: 		"Ruby";
 	--des-rust: 		"Rust";
-	
+
 	--des-scss: 		"SCSS";
 	--des-sql: 			"SQL";
 	--des-p21: 			"STEP Part 21";
@@ -158,7 +158,7 @@
 	--des-stylus: 		"Stylus";
 	--des-subunit: 		"SubUnit";
 	--des-swift: 		"Swift";
-	
+
 	--des-tap:			"Test Anything Protocol";
 	--des-tcl:			"Tcl";
 	--des-tex:			"TeX";
@@ -166,29 +166,29 @@
 	--des-tp:			"TP";
 	--des-twig:			"Twig";
 	--des-typescript:	"TypeScript";
-	
+
 	--des-vbnet:		"VB.Net";
 	--des-vbscript:		"VBScript";
 	--des-vhdl:			"VHDL";
 	--des-vala:			"Vala";
 	--des-verilog:		"Verilog";
 	--des-vim:			"Vim Script";
-	
+
 	--des-x86asm: 		"x86 Assembly";
 	--des-xl: 			"XL";
 	--des-xpath: 		"XQuery";
-	
+
 	--des-zephir:		"Zephir";
-	
-	/*--des-default:	"Not defined";*/
+
+	--des-default:		"Not defined";
 }
 
 .message-group .comment .markup pre code:before {
-  
+
   position: relative;
   display: block;
   top: 0;
-  text-align: center;	
+  text-align: center;
   width: auto;
   color: rgba(255, 98, 98, 0.99);
   background-color: rgba(0,0,0,.5);
@@ -198,5 +198,5 @@
   padding-bottom: 1px;
   margin-top: 0px !important;
   margin-bottom: 4px;
-  
+
 }
