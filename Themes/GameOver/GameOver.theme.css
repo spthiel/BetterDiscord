@@ -1,0 +1,13 @@
+//META{"name":"GameOver","description":"Grayish theme for discord","author":"spthiel","version":"1.0.0"}*//{}
+
+@import url('https://spthiel.github.io/css/CodeBlocks.raw.css');
+@import url('https://spthiel.github.io/css/GameOver.raw.css');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+/*              Background          */
+
+body {
+
+	background: url(https://wallpapertag.com/wallpaper/full/3/9/0/120746-beautiful-triangle-wallpaper-1920x1200.jpg);
+
+}
