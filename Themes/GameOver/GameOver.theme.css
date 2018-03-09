@@ -6,8 +6,13 @@
 
 /*              Background          */
 
-body {
 
+#app-mount::after {
 	background: url(https://wallpapertag.com/wallpaper/full/3/9/0/120746-beautiful-triangle-wallpaper-1920x1200.jpg);
 
+}
+
+:root {
+	/* Don't change this */
+	--version: 1;
 }
