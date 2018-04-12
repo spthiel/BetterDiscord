@@ -14,6 +14,10 @@ class YouTubePlayer {
 		let svgsize = 20;
 
 		this.style = `
+		:root {
+			--resizeThickness: 4px;
+		}
+
 		.player-fixed-video {
 			position: absolute;
 			left: 0;
@@ -31,12 +35,18 @@ class YouTubePlayer {
 			border: 4px solid black;
 		}
 
+		.player-fixed-video-titleframe {
+			display: inline-block;
+			height: 100%;
+		}
+
 		.player-fixed-video-titlebar {
 			height: 30px;
 			background: rgba(0,0,0,.4);
 		}
 
 		#player-fixed-video-player {
+			pointer-events: none;
 			vertical-align: bottom;
 		}
 
@@ -46,7 +56,6 @@ class YouTubePlayer {
 		}
 
 		.player-fixed-video-title {
-			max-width: calc(100% - 30px);
 			display: inline-block;
 			text-overflow: ellipsis;
 			height: 1rem;
@@ -84,6 +93,18 @@ class YouTubePlayer {
 			background-size: cover;
 		}
 
+		.player-fixed-video-timebar-frame {
+			background: white;
+			height: 7px;
+			width: 100%;
+			cursor: pointer;
+		}
+
+		.player-fixed-video-timebar {
+			background: red;
+			height: 100%;
+		}
+
 		.player-fixed-video-btnstop {
 			top: 60px;
 			left: 10px;
@@ -101,6 +122,42 @@ class YouTubePlayer {
 		.player-fixed-video-buttonbar {
 			padding: 3px;
 			float: right;
+		}
+
+		.player-fixed-video-resizeN {
+			cursor: n-resize;
+			position: absolute;
+			left: 0;
+			top: calc(-1 * var(--resizeThickness));
+			width: 100%;
+			height: var(--resizeThickness);
+		}
+
+		.player-fixed-video-resizeE {
+			cursor: e-resize;
+			position: absolute;
+			left: 100%;
+			top: calc(-1 * var(--resizeThickness));
+			width: var(--resizeThickness);
+			height: calc(100% + 2 * var(--resizeThickness));
+		}
+
+		.player-fixed-video-resizeS {
+			cursor: s-resize;
+			position: absolute;
+			left: 0;
+			top: 100%;
+			width: 100%;
+			height: var(--resizeThickness);
+		}
+
+		.player-fixed-video-resizeW {
+			cursor: w-resize;
+			position: absolute;
+			left: calc(-1 * var(--resizeThickness));
+			top: calc(-1 * var(--resizeThickness));
+			width: var(--resizeThickness);
+			height: calc(100% + 2 * var(--resizeThickness));
 		}
 
 		`;
@@ -177,7 +234,7 @@ class YouTubePlayer {
 
 	changeOrCreatePlayer(vid) {
 		if(!this.player || document.getElementsByClassName("player-fixed-video")[0] == undefined) {
-			this.player = new Player(vid);
+			this.player = new YoutubePlayer(vid);
 		} else {
 			this.player.setSrc(vid);
 		}
@@ -190,13 +247,9 @@ class YouTubePlayer {
 			dataType: "jsonp",
 			success: function(data){
 					 player.setTitle(data.items[0].snippet.title);
-					 console.log(data.items[0].snippet.title);
-					 console.log('good');
 			},
 			error: function() {
 				player.setTitle('An error has occurred.');
-				console.log(data.items[0].snippet.title);
-				console.log('poo');
 			}
 		});
 	}
@@ -209,17 +262,15 @@ class YouTubePlayer {
 
 class Player {
 
-	constructor(vid) {
+	constructor(args) {
 
 		this.minheight = 191.25;
 		this.minwidth = 340;
 
-		this.x = 0;
-		this.y = 0;
 		this.width = 340;
 		this.height = 191.25;
-		this.vid = vid;
 
+		this.generateBaseElements();
 		this.generateElements();
 
 		const callback = () => {
@@ -230,164 +281,133 @@ class Player {
 
 		this.frame.addEventListener("animationend", callback, false);
 
+
 		this.frame.classList.add("player-video-in-anim");
 
-		let yoffset = document.getElementsByClassName("titleBar-3_fDwJ")[0].offsetHeight;
+		this.paused = false;
 
-		let mdown = 0;
-		let mstartx = 0;
-		let mstarty = 0;
-		this.player = new YT.Player('player-fixed-video-player', {
-			width: this.width,
-			height: this.height,
-			videoId: vid,
-			playerVars: {
-				autoplay: 1,
-				showinfo: 0,
-				rel: 0,
-				controls: 0
-			}
-		});
+		this.mdown = 0;
+		this.mstartx = 0;
+		this.mstarty = 0;
 
 		this.mousedown = e => {
-			mdown = 1;
-			mstartx = e.pageX;
-			mstarty = e.pageY;
+			this.mdown = 1;
+			this.mstartx = e.pageX;
+			this.mstarty = e.pageY;
 		}
 		this.mousemove = e => {
-			if(mdown == 1) {
-				let xnew = e.pageX-mstartx;
-				let ynew = e.pageY-mstarty;
-				this.move(xnew,ynew);
-				e.preventDefault();
-			} else if(mdown == 2) {
-				let newheight = mstarty-e.pageY;
-				let movey = (newheight+this.height > this.minheight ? newheight : this.minheight-this.height)
-				let newwidth = newheight*16/9
-				let movex = (newwidth+this.width > this.minwidth ? newwidth : this.minwidth-this.width)
-				this.sizeHeight(newheight);
-				this.move(-movex,-movey);
-				e.preventDefault();
-			} else if(mdown == 3) {
-				let newwidth = e.pageX-mstartx;
-				this.sizeWidth(newwidth);
-				e.preventDefault();
-			} else if(mdown == 4) {
-				let newheight = e.pageY-mstarty;
-				this.sizeHeight(newheight);
-				e.preventDefault();
-			} else if(mdown == 5) {
-				let newwidth = mstartx-e.pageX;
-				let movex = (newwidth+this.width > this.minwidth ? newwidth : this.minwidth-this.width)
-				let newheight = newwidth*9/16
-				let movey = (newheight+this.height > this.minheight ? newheight : this.minheight-this.height)
-				this.sizeWidth(newwidth);
-				this.move(-movex,-movey);
-				e.preventDefault();
-			}
-		}
-		this.mouseup = e => {
-			if(mdown == 1) {
-				let xnew = e.pageX-mstartx;
-				let ynew = e.pageY-mstarty;
+			if(this.mdown == 1) {
+				let xnew = e.pageX-this.mstartx;
+				let ynew = e.pageY-this.mstarty;
+				this.mstartx = e.pageX;
+				this.mstarty = e.pageY;
 				this.drop(xnew,ynew);
-			} else if(mdown == 2) {
-				let newheight = mstarty-e.pageY;
+				e.preventDefault();
+			} else if(this.mdown == 2) {
+				let newheight = this.mstarty-e.pageY;
 				let movey = (newheight+this.height > this.minheight ? newheight : this.minheight-this.height)
 				let newwidth = newheight*16/9
 				let movex = (newwidth+this.width > this.minwidth ? newwidth : this.minwidth-this.width)
+				this.mstartx = e.pageX;
+				this.mstarty = e.pageY;
 				this.resizeHeight(newheight);
 				this.drop(-movex,-movey);
-			} else if(mdown == 3) {
-				let newwidth = e.pageX-mstartx;
+				e.preventDefault();
+			} else if(this.mdown == 3) {
+				let newwidth = e.pageX-this.mstartx;
+				this.mstartx = e.pageX;
+				this.mstarty = e.pageY;
 				this.resizeWidth(newwidth);
-			} else if(mdown == 4) {
-				let newheight = e.pageY-mstarty;
+				e.preventDefault();
+			} else if(this.mdown == 4) {
+				let newheight = e.pageY-this.mstarty;
+				this.mstartx = e.pageX;
+				this.mstarty = e.pageY;
 				this.resizeHeight(newheight);
-			} else if(mdown == 5) {
-				let newwidth = mstartx-e.pageX;
+				e.preventDefault();
+			} else if(this.mdown == 5) {
+				let newwidth = this.mstartx-e.pageX;
 				let movex = (newwidth+this.width > this.minwidth ? newwidth : this.minwidth-this.width)
 				let newheight = newwidth*9/16
 				let movey = (newheight+this.height > this.minheight ? newheight : this.minheight-this.height)
+				this.mstartx = e.pageX;
+				this.mstarty = e.pageY;
 				this.resizeWidth(newwidth);
 				this.drop(-movex,-movey);
 				e.preventDefault();
 			}
-			mdown = 0;
 		}
-		this.framelistener = e => {
-			mstartx = e.pageX;
-			mstarty = e.pageY;
+		this.mouseup = e => this.mdown = 0;
 
-			let border = 4;
-
-			let bars =
-				[
-					[
-						this.x+border,
-						this.y,
-						this.x+this.width+border,
-						this.y+border
-					],
-					[
-						this.x+this.width+border,
-						this.y,
-						this.x+this.width+2*border,
-						this.y+this.height+30+2*border
-					],
-					[
-						this.x+border,
-						this.y+this.height+30+border,
-						this.x+this.width+border,
-						this.y+this.height+30+2*border
-					],
-					[
-						this.x,
-						this.y,
-						this.x+border,
-						this.y+this.height+30+2*border
-					]
-				]
-
-			let sbar = -1;
-			for(let i = 0; i < bars.length; i++) {
-				let bar = bars[i];
-				if(mstartx >= bar[0] && mstartx <= bar[2] && mstarty-yoffset >= bar[1] && mstarty-yoffset <= bar[3]) {
-					sbar = i;
-					break;
-				}
-			}
-
-			if(sbar == 0) {
-				mdown = 2
-			} else if(sbar == 1) {
-				mdown = 3;
-			} else if(sbar == 2) {
-				mdown = 4;
-			} else if(sbar == 3) {
-				mdown = 5;
-			}
-
-
-		}
-
+		this.addBaseListener();
 		this.addListener();
 
+		this.x = 0;
+		this.y = 0;
+
+		this.construct(args);
+
+		let xoff = 30;
+		let yoff = 120;
+
+		let channelmembers = document.getElementsByClassName("channel-members")[0];
+
+		if(channelmembers) {
+			xoff += channelmembers.offsetWidth
+		}
+
+		this.x = this.box.offsetLeft + this.box.offsetWidth - this.frame.offsetWidth - xoff;
+		this.y = this.box.offsetTop + this.box.offsetHeight - this.frame.offsetHeight - yoff;
+
+		this.drop(0,0);
+		this.resizeHeight(0);
+
+		this.intervalltask = setInterval(
+			(function(self){
+				return function() {
+					self.updateTimebar();
+				}
+			})(this),10);
+	}
+
+	generateElements(){}
+	addListener(){}
+	construct(args){}
+	getPlayerName(){return "default"}
+	getVideoPercentage(){}
+	setVideoPercentage(){}
+	playVideo(){}
+	pauseVideo(){}
+	stopVideo(){}
+
+	updateTimebar() {
+		let progress = this.getVideoPercentage();
+		let absolute = progress * 100;
+		this.timebar.style.width = absolute + "%";
 	}
 
 	addClassName(element,className) {
 		element.className += (!element.className || element.className == "" ? "" : " ") + "player-fixed-video" + ((className && className !== "") ? "-" + className : "");
+		//this.addId(element);
 	}
 
 	setId(element,idname) {
-		element.setAttribute("id","player-fixed-video" + ((idname && idname !== "") ? "-" + idname : ""));
+		element.setAttribute("id", "player-fixed-video" + ((idname && idname !== "") ? "-" + idname : ""));
+		this.addId(element);
 	}
 
-	generateElements() {
+	addId(element) {
+		let idclass = "player-" + this.getPlayerName();
+		if(element && !element.classList.contains(idclass)) {
+			element.className += " " + idclass;
+		}
+	}
 
+	generateBaseElements() {
 		let toAppendTo = document.getElementsByClassName("app")[0];
 		this.box = document.createElement("div");
 		this.addClassName(this.box);
+		this.addId(this.box);
 
 		this.frame = document.createElement("div");
 		this.addClassName(this.frame,"frame");
@@ -395,73 +415,133 @@ class Player {
 		this.setId(placeholder,"player");
 		this.titleBar = document.createElement("div");
 		this.addClassName(this.titleBar,"titlebar");
+		this.titleFrame = document.createElement("div");
+		this.addClassName(this.titleFrame,"titleframe");
 		this.videoTitle = document.createElement("div");
 		this.addClassName(this.videoTitle,"title");
 		this.closeButton = document.createElement("div");
 		this.addClassName(this.closeButton,"btnclose");
 
-		this.titleBar.appendChild(this.videoTitle);
-		this.titleBar.appendChild(this.closeButton);
-		this.frame.appendChild(this.titleBar);
-		this.frame.appendChild(placeholder);
-		this.box.appendChild(this.frame);
-		toAppendTo.appendChild(this.box);
-
 		this.buttonBar = document.createElement("div");
-		this.addClassName(this.buttonBar,"buttonbar")
+		this.addClassName(this.buttonBar,"buttonbar");
 
 		this.playButton = document.createElement("div");
-		this.addClassName(this.playButton,"btnplay");
-		this.addClassName(this.playButton,"button");
-		this.pauseButton = document.createElement("div");
-		this.addClassName(this.pauseButton,"btnpause");
-		this.addClassName(this.pauseButton,"button");
+		this.updatePlayButton();
 		this.stopButton = document.createElement("div");
 		this.addClassName(this.stopButton,"btnstop");
 		this.addClassName(this.stopButton,"button");
+
 		this.timebarFrame = document.createElement("div");
 		this.addClassName(this.timebarFrame,"timebar-frame");
 		this.timebar = document.createElement("div");
 		this.addClassName(this.timebar,"timebar");
 
+		this.timebarFrame.appendChild(this.timebar);
+
 		this.buttonBar.appendChild(this.playButton);
-		this.buttonBar.appendChild(this.pauseButton);
 		this.buttonBar.appendChild(this.stopButton);
+
+		this.titleFrame.appendChild(this.videoTitle);
+		this.titleBar.appendChild(this.titleFrame);
+		this.titleBar.appendChild(this.closeButton);
+		this.frame.appendChild(this.titleBar);
+		this.frame.appendChild(placeholder);
 		this.frame.appendChild(this.buttonBar);
 		this.frame.appendChild(this.timebarFrame);
-		this.timebarFrame.appendChild(this.timebar);
+		this.box.appendChild(this.frame);
+		toAppendTo.appendChild(this.box);
+
+		let dirs = ["N","E","S","W"];
+		this.boxes = [];
+		for(let i = 0; i < dirs.length; i++) {
+			this.boxes[i] = document.createElement("div");
+			this.addClassName(this.boxes[i],"resize" + dirs[i]);
+			this.frame.appendChild(this.boxes[i]);
+		}
 
 	}
 
-	addListener() {
+	addBaseListener() {
 
-		this.closeButton.addEventListener("click",function(e) {
+		this.closeButton.addEventListener("click",e => {
 			let toRemove = document.getElementsByClassName("player-fixed-video")[0];
+			this.removeListener();
 			if(toRemove)
 				toRemove.firstChild.classList.remove('player-video-in');
 				setTimeout(() => {
-				toRemove.parentElement.removeChild(toRemove);
+					toRemove.parentElement.removeChild(toRemove);
 				}, 300);
 		}, false);
-		this.frame.addEventListener("mousedown", this.framelistener,false);
-		this.titleBar.addEventListener("mousedown", this.mousedown, false);
+		this.timebarFrame.addEventListener("click",e => {
+			let rect = this.timebarFrame.getBoundingClientRect();
+			let percentage = (e.pageX-rect.left)/this.timebarFrame.offsetWidth;
+			this.setVideoPercentage(percentage);
+		},false);
+		this.titleBar.addEventListener("mousedown", this.mousedown, false) ;
 		document.addEventListener("mousemove", this.mousemove, false);
 		document.addEventListener("mouseup", this.mouseup, false);
 
-		this.playButton.addEventListener("click", e => this.player.playVideo(), false);
-		this.pauseButton.addEventListener("click", e => this.player.pauseVideo(), false);
-		this.stopButton.addEventListener("click", e => this.player.stopVideo(), false);
+		for(let i = 0; i < this.boxes.length; i++) {
+			this.boxes[i].addEventListener("mousedown",e => {
+				this.mdown = 2+i;
+				this.mstartx = e.pageX;
+				this.mstarty = e.pageY;
+			}, false);
+		}
 
+		this.playButton.addEventListener("click", e => {
+			if(this.paused) {
+				this.playVideo();
+				this.paused = false;
+				this.updatePlayButton();
+			} else {
+				this.pauseVideo();
+				this.paused = true;
+				this.updatePlayButton();
+			}
+		}, false);
+		this.stopButton.addEventListener("click", e => {
+			this.stopVideo();
+			this.paused = true;
+			this.updatePlayButton();
+		}, false);
+
+	}
+
+	updatePlayButton() {
+		this.playButton.className = "player-fixed-video-button player-fixed-video-" + (this.paused ? "btnplay" : "btnpause");
 	}
 
 	removeListener() {
 
+		clearInterval(this.intervalltask);
 		document.removeEventListener("mousemove", this.mousemove, false);
 		document.removeEventListener("mouseup", this.mouseup, false);
-
+		if(this.removePlayerListener)
+			this.removePlayerListener();
 	}
 
-	move(x,y) {
+	resizeWidth(width) {
+		this.width = this.width + width;
+		if(this.width < this.minwidth) {
+			this.width = this.minwidth;
+		}
+		this.height = this.width*9/16;
+		this.titleFrame.style.width = (this.width | 0) + "px";
+		this.resize();
+	}
+
+	resizeHeight(height) {
+		this.height = this.height + height;
+		if(this.height < this.minheight) {
+			this.height = this.minheight;
+		}
+		this.width = this.height*16/9;
+		this.titleFrame.style.width = (this.width | 0) + "px";
+		this.resize();
+	}
+
+	drop(x,y) {
 		let minx = this.box.offsetLeft;
 		let miny = this.box.offsetTop;
 		let maxx = minx + this.box.offsetWidth - this.frame.offsetWidth;
@@ -479,13 +559,78 @@ class Player {
 			y = miny-this.y;
 		this.frame.style.left = (this.x + x) + "px";
 		this.frame.style.top = (this.y + y) + "px";
-		return x,y;
-	}
-
-	drop(x,y) {
-		x,y = this.move(x,y);
 		this.x = (this.x + x);
 		this.y = (this.y + y);
+	}
+
+	setTitle(title) {
+		this.videoTitle.innerHTML = title;
+	}
+
+	getFrame() {
+		return this.frame;
+	}
+
+}
+
+//----------------------------------------------------------------------------------------------------
+//
+//----------------------------------------------------------------------------------------------------
+
+class YoutubePlayer extends Player{
+
+	construct(vid) {
+		this.vid = vid;
+
+		this.player = new YT.Player('player-fixed-video-player', {
+			width: this.width,
+			height: this.height,
+			videoId: vid,
+			playerVars: {
+				autoplay: 1,
+				showinfo: 0,
+				rel: 0,
+				controls: 0
+			}
+		});
+
+	}
+
+	getPlayerName(){return "youtube"}
+
+	generateElements() {}
+
+	getVideoPercentage() {
+		if(!this.player.getDuration)
+			return 0;
+		if(this.player.getDuration() == 0)
+			return 0;
+		return this.player.getCurrentTime()/this.player.getDuration();
+	}
+
+	setVideoPercentage(percentage) {
+		if(!this.player.getDuration)
+			return;
+		if(this.player.getDuration() == 0)
+			return;
+		let seconds = percentage * this.player.getDuration() | 0;
+		this.player.seekTo(seconds, true);
+	}
+
+	playVideo() {
+		this.player.playVideo();
+	}
+
+	pauseVideo() {
+		this.player.pauseVideo();
+	}
+
+	stopVideo() {
+		this.player.stopVideo();
+	}
+
+	addListener() {
+
 	}
 
 	setSrc(vid) {
@@ -497,52 +642,8 @@ class Player {
 		}
 	}
 
-	sizeWidth(width) {
-		let newwidth = this.width + width;
-		if(newwidth < this.minwidth) {
-			newwidth = this.minwidth;
-		}
-		let newheight = newwidth*9/16;
-		this.size(newwidth,newheight);
-	}
-
-	sizeHeight(height) {
-		let newheight = this.height + height;
-		if(newheight < this.minheight) {
-			newheight = this.minheight;
-		}
-		let newwidth = newheight*16/9;
-		this.size(newwidth,newheight);
-	}
-
-	size(width, height) {
-		this.player.setSize(width,height);
-	}
-
-	resizeWidth(width) {
-		this.width = this.width + width;
-		if(this.width < this.minwidth) {
-			this.width = this.minwidth;
-		}
-		this.height = this.width*9/16;
-		this.resize();
-	}
-
-	resizeHeight(height) {
-		this.height = this.height + height;
-		if(this.height < this.minheight) {
-			this.height = this.minheight;
-		}
-		this.width = this.height*16/9;
-		this.resize();
-	}
-
 	resize() {
 		this.player.setSize(this.width,this.height);
-	}
-
-	setTitle(title) {
-		this.videoTitle.innerHTML = title;
 	}
 
 }
