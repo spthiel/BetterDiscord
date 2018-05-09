@@ -230,9 +230,7 @@ class VideoPlayer {
   			let {target} = e;
   			"polygon" === target.tagName && (target = target.parentNode);
   			if("svg" === target.tagName && "Play" === target.getAttribute("name")){
-				this.onClick(target);
-    			e.stopImmediatePropagation();
-    			e.preventDefault();
+				this.onClick(e,target);
   			}
 		}
 		document.addEventListener("click", this.listener, true);
@@ -251,7 +249,7 @@ class VideoPlayer {
 			this.player.removeListener();
     }
 
-	onClickFunction(e) {
+	onClickFunction(eve, e) {
 
 		// let oldicons = document.getElementsByClassName('icon-played')
 		// for(let i = 0; i < oldicons.length; i++) {
@@ -262,14 +260,14 @@ class VideoPlayer {
 		let link = e.nextSibling;
 		let url = link.href;
 		let players = VideoPlayer.registeredPlayers;
-		console.log(url);
 		for(let i = 0; i < players.length; i++) {
 			let player = players[i];
 			if(player.getRegex) {
 				let regex = player.getRegex();
 				if(regex.test(url)) {
 					let vid = url.match(regex)[1];
-					console.log(vid);
+	    			eve.stopImmediatePropagation();
+	    			eve.preventDefault();
 					if(!this.player || document.getElementsByClassName("player-fixed-video")[0] == undefined) {
 						this.player = new player(vid);
 						this.playerType = this.player.getPlayerName();
