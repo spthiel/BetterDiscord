@@ -738,7 +738,7 @@ class YoutubePlayer extends Player{
 			url: vidTitleGet,
 			dataType: "jsonp",
 			success: function(data){
-					 that.setTitle(data.items[0].snippet.title);
+				 that.setTitle(data.items[0].snippet.title);
 			},
 			error: function() {
 				that.setTitle('An error has occurred.');
