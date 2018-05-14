@@ -1,0 +1,67 @@
+//META{"name":"androidstudio.css","description":"Applies the androidstudio theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/*
+Date: 24 Fev 2015
+Author: Pedro Oliveira <kanytu@gmail . com>
+*/
+
+.theme-dark .hljs {
+  color: #a9b7c6;
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+}
+
+.theme-dark .hljs-number,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-bullet {
+  color: #6897BB;
+}
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-deletion {
+  color: #cc7832;
+}
+
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-variable,
+.theme-dark .hljs-link {
+  color: #629755;
+}
+
+.theme-dark .hljs-comment,
+.theme-dark .hljs-quote {
+  color: #808080;
+}
+
+.theme-dark .hljs-meta {
+  color: #bbb529;
+}
+
+.theme-dark .hljs-string,
+.theme-dark .hljs-attribute,
+.theme-dark .hljs-addition {
+  color: #6A8759;
+}
+
+.theme-dark .hljs-section,
+.theme-dark .hljs-title,
+.theme-dark .hljs-type {
+  color: #ffc66d;
+}
+
+.theme-dark .hljs-name,
+.theme-dark .hljs-selector-id,
+.theme-dark .hljs-selector-class {
+  color: #e8bf6a;
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}
+
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}

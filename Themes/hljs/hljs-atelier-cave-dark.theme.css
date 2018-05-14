@@ -1,0 +1,82 @@
+//META{"name":"atelier-cave-dark.css","description":"Applies the atelier-cave-dark theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/* Base16 Atelier Cave Dark - Theme */
+/* by Bram de Haan (http://atelierbram.github.io/syntax-highlighting/atelier-schemes/cave) */
+/* Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16) */
+
+/* Atelier-Cave Comment */
+.theme-dark .hljs-comment,
+.theme-dark .hljs-quote {
+  color: #7e7887;
+}
+
+/* Atelier-Cave Red */
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-variable,
+.theme-dark .hljs-attribute,
+.theme-dark .hljs-regexp,
+.theme-dark .hljs-link,
+.theme-dark .hljs-tag,
+.theme-dark .hljs-name,
+.theme-dark .hljs-selector-id,
+.theme-dark .hljs-selector-class {
+  color: #be4678;
+}
+
+/* Atelier-Cave Orange */
+.theme-dark .hljs-number,
+.theme-dark .hljs-meta,
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-builtin-name,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-type,
+.theme-dark .hljs-params {
+  color: #aa573c;
+}
+
+/* Atelier-Cave Green */
+.theme-dark .hljs-string,
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-bullet {
+  color: #2a9292;
+}
+
+/* Atelier-Cave Blue */
+.theme-dark .hljs-title,
+.theme-dark .hljs-section {
+  color: #576ddb;
+}
+
+/* Atelier-Cave Purple */
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag {
+  color: #955ae7;
+}
+
+.theme-dark .hljs-deletion,
+.theme-dark .hljs-addition {
+  color: #19171c;
+  display: inline-block;
+  width: 100%;
+}
+
+.theme-dark .hljs-deletion {
+}
+
+.theme-dark .hljs-addition {
+}
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  color: #8b8792;
+  padding: 0.5em;
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}
+
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}

@@ -1,0 +1,61 @@
+//META{"name":"codepen-embed.css","description":"Applies the codepen-embed theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/*
+  codepen.io Embed Theme
+  Author: Justin Perry <http://github.com/ourmaninamsterdam>
+  Original theme - https://github.com/chriskempson/tomorrow-theme
+*/
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #fff;
+}
+
+.theme-dark .hljs-comment,
+.theme-dark .hljs-quote {
+  color: #777;
+}
+
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-variable,
+.theme-dark .hljs-tag,
+.theme-dark .hljs-regexp,
+.theme-dark .hljs-meta,
+.theme-dark .hljs-number,
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-builtin-name,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-params,
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-link,
+.theme-dark .hljs-deletion {
+  color: #ab875d;
+}
+
+.theme-dark .hljs-section,
+.theme-dark .hljs-title,
+.theme-dark .hljs-name,
+.theme-dark .hljs-selector-id,
+.theme-dark .hljs-selector-class,
+.theme-dark .hljs-type,
+.theme-dark .hljs-attribute {
+  color: #9b869b;
+}
+
+.theme-dark .hljs-string,
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-addition {
+  color: #8f9c6c;
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}
+
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}

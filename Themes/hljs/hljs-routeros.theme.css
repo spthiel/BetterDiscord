@@ -1,0 +1,109 @@
+//META{"name":"routeros.css","description":"Applies the routeros theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/*
+
+ highlight.js style for Microtik RouterOS script
+
+*/
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+}
+
+/* Base color: saturation 0; */
+
+.theme-dark .hljs,
+.theme-dark .hljs-subst {
+  color: #444;
+}
+
+.theme-dark .hljs-comment {
+  color: #888888;
+}
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-meta-keyword,
+.theme-dark .hljs-doctag,
+.theme-dark .hljs-name {
+  font-weight: bold;
+}
+
+.theme-dark .hljs-attribute {
+  color: #0E9A00;
+}    
+
+.theme-dark .hljs-function {
+  color: #99069A;
+}
+
+.theme-dark .hljs-builtin-name {
+  color: #99069A;
+}
+
+/* User color: hue: 0 */
+
+.theme-dark .hljs-type,
+.theme-dark .hljs-string,
+.theme-dark .hljs-number,
+.theme-dark .hljs-selector-id,
+.theme-dark .hljs-selector-class,
+.theme-dark .hljs-quote,
+.theme-dark .hljs-template-tag,
+.theme-dark .hljs-deletion {
+  color: #880000;
+}
+
+.theme-dark .hljs-title,
+.theme-dark .hljs-section {
+  color: #880000;
+  font-weight: bold;
+}
+
+.theme-dark .hljs-regexp,
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-variable,
+.theme-dark .hljs-link,
+.theme-dark .hljs-selector-attr,
+.theme-dark .hljs-selector-pseudo {
+  color: #BC6060;
+}
+
+
+/* Language color: hue: 90; */
+
+.theme-dark .hljs-literal {
+  color: #78A960;
+}
+
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-code,
+.theme-dark .hljs-addition {
+  color: #0C9A9A;
+}
+
+
+/* Meta color: hue: 200 */
+
+.theme-dark .hljs-meta {
+  color: #1f7199;
+}
+
+.theme-dark .hljs-meta-string {
+  color: #4d99bf;
+}
+
+
+/* Misc effects */
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}
+
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}

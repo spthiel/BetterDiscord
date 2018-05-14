@@ -1,0 +1,75 @@
+//META{"name":"ocean.css","description":"Applies the ocean theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/* Ocean Dark Theme */
+/* https://github.com/gavsiu */
+/* Original theme - https://github.com/chriskempson/base16 */
+
+/* Ocean Comment */
+.theme-dark .hljs-comment,
+.theme-dark .hljs-quote {
+  color: #65737e;
+}
+
+/* Ocean Red */
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-variable,
+.theme-dark .hljs-tag,
+.theme-dark .hljs-name,
+.theme-dark .hljs-selector-id,
+.theme-dark .hljs-selector-class,
+.theme-dark .hljs-regexp,
+.theme-dark .hljs-deletion {
+  color: #bf616a;
+}
+
+/* Ocean Orange */
+.theme-dark .hljs-number,
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-builtin-name,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-type,
+.theme-dark .hljs-params,
+.theme-dark .hljs-meta,
+.theme-dark .hljs-link {
+  color: #d08770;
+}
+
+/* Ocean Yellow */
+.theme-dark .hljs-attribute {
+  color: #ebcb8b;
+}
+
+/* Ocean Green */
+.theme-dark .hljs-string,
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-addition {
+  color: #a3be8c;
+}
+
+/* Ocean Blue */
+.theme-dark .hljs-title,
+.theme-dark .hljs-section {
+  color: #8fa1b3;
+}
+
+/* Ocean Purple */
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag {
+  color: #b48ead;
+}
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  color: #c0c5ce;
+  padding: 0.5em;
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}
+
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}

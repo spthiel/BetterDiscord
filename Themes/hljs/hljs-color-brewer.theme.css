@@ -1,0 +1,72 @@
+//META{"name":"color-brewer.css","description":"Applies the color-brewer theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/*
+
+Colorbrewer theme
+Original: https://github.com/mbostock/colorbrewer-theme (c) Mike Bostock <mike@ocks.org>
+Ported by Fabrício Tavares de Oliveira
+
+*/
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+}
+
+.theme-dark .hljs,
+.theme-dark .hljs-subst {
+  color: #000;
+}
+
+.theme-dark .hljs-string,
+.theme-dark .hljs-meta,
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-template-tag,
+.theme-dark .hljs-template-variable,
+.theme-dark .hljs-addition {
+  color: #756bb1;
+}
+
+.theme-dark .hljs-comment,
+.theme-dark .hljs-quote {
+  color: #636363;
+}
+
+.theme-dark .hljs-number,
+.theme-dark .hljs-regexp,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-link {
+  color: #31a354;
+}
+
+.theme-dark .hljs-deletion,
+.theme-dark .hljs-variable {
+  color: #88f;
+}
+
+
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-title,
+.theme-dark .hljs-section,
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-doctag,
+.theme-dark .hljs-type,
+.theme-dark .hljs-tag,
+.theme-dark .hljs-name,
+.theme-dark .hljs-selector-id,
+.theme-dark .hljs-selector-class,
+.theme-dark .hljs-strong {
+  color: #3182bd;
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}
+
+.theme-dark .hljs-attribute {
+  color: #e6550d;
+}

@@ -1,0 +1,70 @@
+//META{"name":"atelier-lakeside-dark.css","description":"Applies the atelier-lakeside-dark theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/* Base16 Atelier Lakeside Dark - Theme */
+/* by Bram de Haan (http://atelierbram.github.io/syntax-highlighting/atelier-schemes/lakeside) */
+/* Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16) */
+
+/* Atelier-Lakeside Comment */
+.theme-dark .hljs-comment,
+.theme-dark .hljs-quote {
+  color: #7195a8;
+}
+
+/* Atelier-Lakeside Red */
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-variable,
+.theme-dark .hljs-attribute,
+.theme-dark .hljs-tag,
+.theme-dark .hljs-name,
+.theme-dark .hljs-regexp,
+.theme-dark .hljs-link,
+.theme-dark .hljs-name,
+.theme-dark .hljs-selector-id,
+.theme-dark .hljs-selector-class {
+  color: #d22d72;
+}
+
+/* Atelier-Lakeside Orange */
+.theme-dark .hljs-number,
+.theme-dark .hljs-meta,
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-builtin-name,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-type,
+.theme-dark .hljs-params {
+  color: #935c25;
+}
+
+/* Atelier-Lakeside Green */
+.theme-dark .hljs-string,
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-bullet {
+  color: #568c3b;
+}
+
+/* Atelier-Lakeside Blue */
+.theme-dark .hljs-title,
+.theme-dark .hljs-section {
+  color: #257fad;
+}
+
+/* Atelier-Lakeside Purple */
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag {
+  color: #6b6bb8;
+}
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  color: #7ea2b4;
+  padding: 0.5em;
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}
+
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}

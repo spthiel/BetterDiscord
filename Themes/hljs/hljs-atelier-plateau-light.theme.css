@@ -1,0 +1,83 @@
+//META{"name":"atelier-plateau-light.css","description":"Applies the atelier-plateau-light theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/* Base16 Atelier Plateau Light - Theme */
+/* by Bram de Haan (http://atelierbram.github.io/syntax-highlighting/atelier-schemes/plateau) */
+/* Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16) */
+
+/* Atelier-Plateau Comment */
+.theme-dark .hljs-comment,
+.theme-dark .hljs-quote {
+  color: #655d5d;
+}
+
+/* Atelier-Plateau Red */
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-variable,
+.theme-dark .hljs-attribute,
+.theme-dark .hljs-tag,
+.theme-dark .hljs-name,
+.theme-dark .hljs-regexp,
+.theme-dark .hljs-link,
+.theme-dark .hljs-name,
+.theme-dark .hljs-selector-id,
+.theme-dark .hljs-selector-class {
+  color: #ca4949;
+}
+
+/* Atelier-Plateau Orange */
+.theme-dark .hljs-number,
+.theme-dark .hljs-meta,
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-builtin-name,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-type,
+.theme-dark .hljs-params {
+  color: #b45a3c;
+}
+
+/* Atelier-Plateau Green */
+.theme-dark .hljs-string,
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-bullet {
+  color: #4b8b8b;
+}
+
+/* Atelier-Plateau Blue */
+.theme-dark .hljs-title,
+.theme-dark .hljs-section {
+  color: #7272ca;
+}
+
+/* Atelier-Plateau Purple */
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag {
+  color: #8464c4;
+}
+
+.theme-dark .hljs-deletion,
+.theme-dark .hljs-addition {
+  color: #1b1818;
+  display: inline-block;
+  width: 100%;
+}
+
+.theme-dark .hljs-deletion {
+}
+
+.theme-dark .hljs-addition {
+}
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  color: #585050;
+  padding: 0.5em;
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}
+
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}

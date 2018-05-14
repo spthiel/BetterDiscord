@@ -1,0 +1,65 @@
+//META{"name":"brown-paper.css","description":"Applies the brown-paper theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/*
+
+Brown Paper style from goldblog.com.ua (c) Zaripov Yura <yur4ik7@ukr.net>
+
+*/
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+}
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-literal {
+  color:#005599;
+  font-weight:bold;
+}
+
+.theme-dark .hljs,
+.theme-dark .hljs-subst {
+  color: #363c69;
+}
+
+.theme-dark .hljs-string,
+.theme-dark .hljs-title,
+.theme-dark .hljs-section,
+.theme-dark .hljs-type,
+.theme-dark .hljs-attribute,
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-addition,
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-tag,
+.theme-dark .hljs-template-variable,
+.theme-dark .hljs-link,
+.theme-dark .hljs-name {
+  color: #2c009f;
+}
+
+.theme-dark .hljs-comment,
+.theme-dark .hljs-quote,
+.theme-dark .hljs-meta,
+.theme-dark .hljs-deletion {
+  color: #802022;
+}
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-doctag,
+.theme-dark .hljs-title,
+.theme-dark .hljs-section,
+.theme-dark .hljs-type,
+.theme-dark .hljs-name,
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}

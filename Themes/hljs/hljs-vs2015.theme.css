@@ -1,0 +1,114 @@
+//META{"name":"vs2015.css","description":"Applies the vs2015 theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/*
+ * Visual Studio 2015 dark style
+ * Author: Nicolas LLOBERA <nllobera@gmail.com>
+ */
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #DCDCDC;
+}
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-name {
+  color: #569CD6;
+}
+.theme-dark .hljs-link {
+  color: #569CD6;
+  text-decoration: underline;
+}
+
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-type {
+  color: #4EC9B0;
+}
+
+.theme-dark .hljs-number,
+.theme-dark .hljs-class {
+  color: #B8D7A3;
+}
+
+.theme-dark .hljs-string,
+.theme-dark .hljs-meta-string {
+  color: #D69D85;
+}
+
+.theme-dark .hljs-regexp,
+.theme-dark .hljs-template-tag {
+  color: #9A5334;
+}
+
+.theme-dark .hljs-subst,
+.theme-dark .hljs-function,
+.theme-dark .hljs-title,
+.theme-dark .hljs-params,
+.theme-dark .hljs-formula {
+  color: #DCDCDC;
+}
+
+.theme-dark .hljs-comment,
+.theme-dark .hljs-quote {
+  color: #57A64A;
+  font-style: italic;
+}
+
+.theme-dark .hljs-doctag {
+  color: #608B4E;
+}
+
+.theme-dark .hljs-meta,
+.theme-dark .hljs-meta-keyword,
+.theme-dark .hljs-tag {
+  color: #9B9B9B;
+}
+
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-variable {
+  color: #BD63C5;
+}
+
+.theme-dark .hljs-attr,
+.theme-dark .hljs-attribute,
+.theme-dark .hljs-builtin-name {
+  color: #9CDCFE;
+}
+
+.theme-dark .hljs-section {
+  color: gold;
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}
+
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}
+
+/*.hljs-code {
+  font-family:'Monospace';
+}*/
+
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-selector-id,
+.theme-dark .hljs-selector-class,
+.theme-dark .hljs-selector-attr,
+.theme-dark .hljs-selector-pseudo {
+  color: #D7BA7D;
+}
+
+.theme-dark .hljs-addition {
+  display: inline-block;
+  width: 100%;
+}
+
+.theme-dark .hljs-deletion {
+  display: inline-block;
+  width: 100%;
+}

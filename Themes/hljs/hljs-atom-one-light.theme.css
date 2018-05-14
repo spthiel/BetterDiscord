@@ -1,0 +1,97 @@
+//META{"name":"atom-one-light.css","description":"Applies the atom-one-light theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/*
+
+Atom One Light by Daniel Gamage
+Original One Light Syntax theme from https://github.com/atom/one-light-syntax
+
+base:    #fafafa
+mono-1:  #383a42
+mono-2:  #686b77
+mono-3:  #a0a1a7
+hue-1:   #0184bb
+hue-2:   #4078f2
+hue-3:   #a626a4
+hue-4:   #50a14f
+hue-5:   #e45649
+hue-5-2: #c91243
+hue-6:   #986801
+hue-6-2: #c18401
+
+*/
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #383a42;
+}
+
+.theme-dark .hljs-comment,
+.theme-dark .hljs-quote {
+  color: #a0a1a7;
+  font-style: italic;
+}
+
+.theme-dark .hljs-doctag,
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-formula {
+  color: #a626a4;
+}
+
+.theme-dark .hljs-section,
+.theme-dark .hljs-name,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-deletion,
+.theme-dark .hljs-subst {
+  color: #e45649;
+}
+
+.theme-dark .hljs-literal {
+  color: #0184bb;
+}
+
+.theme-dark .hljs-string,
+.theme-dark .hljs-regexp,
+.theme-dark .hljs-addition,
+.theme-dark .hljs-attribute,
+.theme-dark .hljs-meta-string {
+  color: #50a14f;
+}
+
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-class .hljs-title {
+  color: #c18401;
+}
+
+.theme-dark .hljs-attr,
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-variable,
+.theme-dark .hljs-type,
+.theme-dark .hljs-selector-class,
+.theme-dark .hljs-selector-attr,
+.theme-dark .hljs-selector-pseudo,
+.theme-dark .hljs-number {
+  color: #986801;
+}
+
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-link,
+.theme-dark .hljs-meta,
+.theme-dark .hljs-selector-id,
+.theme-dark .hljs-title {
+  color: #4078f2;
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}
+
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}
+
+.theme-dark .hljs-link {
+  text-decoration: underline;
+}

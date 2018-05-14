@@ -1,0 +1,77 @@
+//META{"name":"dracula.css","description":"Applies the dracula theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/*
+
+Dracula Theme v1.2.0
+
+https://github.com/zenorocha/dracula-theme
+
+Copyright 2015, All rights reserved
+
+Code licensed under the MIT license
+http://zenorocha.mit-license.org
+
+@author Éverton Ribeiro <nuxlli@gmail.com>
+@author Zeno Rocha <hi@zenorocha.com>
+
+*/
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+}
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-section,
+.theme-dark .hljs-link {
+  color: #8be9fd;
+}
+
+.theme-dark .hljs-function .hljs-keyword {
+  color: #ff79c6;
+}
+
+.theme-dark .hljs,
+.theme-dark .hljs-subst {
+  color: #f8f8f2;
+}
+
+.theme-dark .hljs-string,
+.theme-dark .hljs-title,
+.theme-dark .hljs-name,
+.theme-dark .hljs-type,
+.theme-dark .hljs-attribute,
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-addition,
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-tag,
+.theme-dark .hljs-template-variable {
+  color: #f1fa8c;
+}
+
+.theme-dark .hljs-comment,
+.theme-dark .hljs-quote,
+.theme-dark .hljs-deletion,
+.theme-dark .hljs-meta {
+  color: #6272a4;
+}
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-title,
+.theme-dark .hljs-section,
+.theme-dark .hljs-doctag,
+.theme-dark .hljs-type,
+.theme-dark .hljs-name,
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}

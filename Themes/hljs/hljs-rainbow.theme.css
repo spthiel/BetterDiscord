@@ -1,0 +1,85 @@
+//META{"name":"rainbow.css","description":"Applies the rainbow theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/*
+
+Style with support for rainbow parens
+
+*/
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #d1d9e1;
+}
+
+
+.theme-dark .hljs-comment,
+.theme-dark .hljs-quote {
+  color: #969896;
+  font-style: italic;
+}
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-type,
+.theme-dark .hljs-addition {
+  color: #cc99cc;
+}
+
+.theme-dark .hljs-number,
+.theme-dark .hljs-selector-attr,
+.theme-dark .hljs-selector-pseudo {
+  color: #f99157;
+}
+
+.theme-dark .hljs-string,
+.theme-dark .hljs-doctag,
+.theme-dark .hljs-regexp {
+  color: #8abeb7;
+}
+
+.theme-dark .hljs-title,
+.theme-dark .hljs-name,
+.theme-dark .hljs-section,
+.theme-dark .hljs-built_in {
+  color: #b5bd68;
+}
+
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-variable,
+.theme-dark .hljs-selector-id,
+.theme-dark .hljs-class .hljs-title {
+   color: #ffcc66;
+}
+
+.theme-dark .hljs-section,
+.theme-dark .hljs-name,
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}
+
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-subst,
+.theme-dark .hljs-meta,
+.theme-dark .hljs-link {
+  color: #f99157;
+}
+
+.theme-dark .hljs-deletion {
+  color: #dc322f;
+}
+
+.theme-dark .hljs-formula {
+}
+
+.theme-dark .hljs-attr,
+.theme-dark .hljs-attribute {
+  color: #81a2be;
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}

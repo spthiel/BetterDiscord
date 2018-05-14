@@ -1,0 +1,71 @@
+//META{"name":"magula.css","description":"Applies the magula theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/*
+Description: Magula style for highligh.js
+Author: Ruslan Keba <rukeba@gmail.com>
+Website: http://rukeba.com/
+Version: 1.0
+Date: 2009-01-03
+Music: Aphex Twin / Xtal
+*/
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+}
+
+.theme-dark .hljs,
+.theme-dark .hljs-subst {
+  color: black;
+}
+
+.theme-dark .hljs-string,
+.theme-dark .hljs-title,
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-attribute,
+.theme-dark .hljs-addition,
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-tag,
+.theme-dark .hljs-template-variable {
+  color: #050;
+}
+
+.theme-dark .hljs-comment,
+.theme-dark .hljs-quote {
+  color: #777;
+}
+
+.theme-dark .hljs-number,
+.theme-dark .hljs-regexp,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-type,
+.theme-dark .hljs-link {
+  color: #800;
+}
+
+.theme-dark .hljs-deletion,
+.theme-dark .hljs-meta {
+  color: #00e;
+}
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-doctag,
+.theme-dark .hljs-title,
+.theme-dark .hljs-section,
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-tag,
+.theme-dark .hljs-name {
+  font-weight: bold;
+  color: navy;
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}
+
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}

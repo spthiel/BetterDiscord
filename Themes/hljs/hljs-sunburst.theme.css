@@ -1,0 +1,100 @@
+//META{"name":"sunburst.css","description":"Applies the sunburst theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/*
+
+Sunburst-like style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #f8f8f8;
+}
+
+.theme-dark .hljs-comment,
+.theme-dark .hljs-quote {
+  color: #aeaeae;
+  font-style: italic;
+}
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-type {
+  color: #e28964;
+}
+
+.theme-dark .hljs-string {
+  color: #65b042;
+}
+
+.theme-dark .hljs-subst {
+  color: #daefa3;
+}
+
+.theme-dark .hljs-regexp,
+.theme-dark .hljs-link {
+  color: #e9c062;
+}
+
+.theme-dark .hljs-title,
+.theme-dark .hljs-section,
+.theme-dark .hljs-tag,
+.theme-dark .hljs-name {
+  color: #89bdff;
+}
+
+.theme-dark .hljs-class .hljs-title,
+.theme-dark .hljs-doctag {
+  text-decoration: underline;
+}
+
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-number {
+  color: #3387cc;
+}
+
+.theme-dark .hljs-params,
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-variable {
+  color: #3e87e3;
+}
+
+.theme-dark .hljs-attribute {
+  color: #cda869;
+}
+
+.theme-dark .hljs-meta {
+  color: #8996a8;
+}
+
+.theme-dark .hljs-formula {
+  color: #f8f8f8;
+  font-style: italic;
+}
+
+.theme-dark .hljs-addition {
+  color: #f8f8f8;
+}
+
+.theme-dark .hljs-deletion {
+  color: #f8f8f8;
+}
+
+.theme-dark .hljs-selector-class {
+  color: #9b703f;
+}
+
+.theme-dark .hljs-selector-id {
+  color: #8b98ab;
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}
+
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}

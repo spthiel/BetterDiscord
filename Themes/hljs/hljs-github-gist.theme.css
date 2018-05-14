@@ -1,0 +1,70 @@
+//META{"name":"github-gist.css","description":"Applies the github-gist theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/**
+ * GitHub Gist Theme
+ * Author : Louis Barranqueiro - https://github.com/LouisBarranqueiro
+ */
+
+.theme-dark .hljs {
+  display: block;
+  padding: 0.5em;
+  color: #333333;
+  overflow-x: auto;
+}
+
+.theme-dark .hljs-comment,
+.theme-dark .hljs-meta {
+  color: #969896;
+}
+
+.theme-dark .hljs-string,
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-variable,
+.theme-dark .hljs-strong,
+.theme-dark .hljs-emphasis,
+.theme-dark .hljs-quote {
+  color: #df5000;
+}
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-type {
+  color: #a71d5d;
+}
+
+.theme-dark .hljs-literal,
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-attribute {
+  color: #0086b3;
+}
+
+.theme-dark .hljs-section,
+.theme-dark .hljs-name {
+  color: #63a35c;
+}
+
+.theme-dark .hljs-tag {
+  color: #333333;
+}
+
+.theme-dark .hljs-title,
+.theme-dark .hljs-attr,
+.theme-dark .hljs-selector-id,
+.theme-dark .hljs-selector-class,
+.theme-dark .hljs-selector-attr,
+.theme-dark .hljs-selector-pseudo {
+  color: #795da3;
+}
+
+.theme-dark .hljs-addition {
+  color: #55a532;
+}
+
+.theme-dark .hljs-deletion {
+  color: #bd2c00;
+}
+
+.theme-dark .hljs-link {
+  text-decoration: underline;
+}

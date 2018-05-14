@@ -1,0 +1,73 @@
+//META{"name":"tomorrow.css","description":"Applies the tomorrow theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+
+/* Tomorrow Comment */
+.theme-dark .hljs-comment,
+.theme-dark .hljs-quote {
+  color: #8e908c;
+}
+
+/* Tomorrow Red */
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-variable,
+.theme-dark .hljs-tag,
+.theme-dark .hljs-name,
+.theme-dark .hljs-selector-id,
+.theme-dark .hljs-selector-class,
+.theme-dark .hljs-regexp,
+.theme-dark .hljs-deletion {
+  color: #c82829;
+}
+
+/* Tomorrow Orange */
+.theme-dark .hljs-number,
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-builtin-name,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-type,
+.theme-dark .hljs-params,
+.theme-dark .hljs-meta,
+.theme-dark .hljs-link {
+  color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.theme-dark .hljs-attribute {
+  color: #eab700;
+}
+
+/* Tomorrow Green */
+.theme-dark .hljs-string,
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-addition {
+  color: #718c00;
+}
+
+/* Tomorrow Blue */
+.theme-dark .hljs-title,
+.theme-dark .hljs-section {
+  color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag {
+  color: #8959a8;
+}
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  color: #4d4d4c;
+  padding: 0.5em;
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}
+
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}

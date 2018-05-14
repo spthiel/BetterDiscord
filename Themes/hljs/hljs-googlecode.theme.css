@@ -1,0 +1,87 @@
+//META{"name":"googlecode.css","description":"Applies the googlecode theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/*
+
+Google Code style (c) Aahan Krish <geekpanth3r@gmail.com>
+
+*/
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: black;
+}
+
+.theme-dark .hljs-comment,
+.theme-dark .hljs-quote {
+  color: #800;
+}
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-section,
+.theme-dark .hljs-title,
+.theme-dark .hljs-name {
+  color: #008;
+}
+
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-variable {
+  color: #660;
+}
+
+.theme-dark .hljs-string,
+.theme-dark .hljs-selector-attr,
+.theme-dark .hljs-selector-pseudo,
+.theme-dark .hljs-regexp {
+  color: #080;
+}
+
+.theme-dark .hljs-literal,
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-meta,
+.theme-dark .hljs-number,
+.theme-dark .hljs-link {
+  color: #066;
+}
+
+.theme-dark .hljs-title,
+.theme-dark .hljs-doctag,
+.theme-dark .hljs-type,
+.theme-dark .hljs-attr,
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-builtin-name,
+.theme-dark .hljs-params {
+  color: #606;
+}
+
+.theme-dark .hljs-attribute,
+.theme-dark .hljs-subst {
+  color: #000;
+}
+
+.theme-dark .hljs-formula {
+  font-style: italic;
+}
+
+.theme-dark .hljs-selector-id,
+.theme-dark .hljs-selector-class {
+  color: #9B703F
+}
+
+.theme-dark .hljs-addition {
+}
+
+.theme-dark .hljs-deletion {
+}
+
+.theme-dark .hljs-doctag,
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}

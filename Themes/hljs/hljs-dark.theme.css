@@ -1,0 +1,64 @@
+//META{"name":"dark.css","description":"Applies the dark theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/*
+
+Dark style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
+
+*/
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+}
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-section,
+.theme-dark .hljs-link {
+  color: white;
+}
+
+.theme-dark .hljs,
+.theme-dark .hljs-subst {
+  color: #ddd;
+}
+
+.theme-dark .hljs-string,
+.theme-dark .hljs-title,
+.theme-dark .hljs-name,
+.theme-dark .hljs-type,
+.theme-dark .hljs-attribute,
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-addition,
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-tag,
+.theme-dark .hljs-template-variable {
+  color: #d88;
+}
+
+.theme-dark .hljs-comment,
+.theme-dark .hljs-quote,
+.theme-dark .hljs-deletion,
+.theme-dark .hljs-meta {
+  color: #777;
+}
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-title,
+.theme-dark .hljs-section,
+.theme-dark .hljs-doctag,
+.theme-dark .hljs-type,
+.theme-dark .hljs-name,
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}

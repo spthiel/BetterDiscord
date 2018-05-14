@@ -1,0 +1,107 @@
+//META{"name":"agate.css","description":"Applies the agate theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/*!
+ * Agate by Taufik Nurrohman <https://github.com/tovic>
+ * ----------------------------------------------------
+ *
+ * #ade5fc
+ * #a2fca2
+ * #c6b4f0
+ * #d36363
+ * #fcc28c
+ * #fc9b9b
+ * #ffa
+ * #fff
+ * #333
+ * #62c8f3
+ * #888
+ *
+ */
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: white;
+}
+
+.theme-dark .hljs-name,
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}
+
+.theme-dark .hljs-code,
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}
+
+.theme-dark .hljs-tag {
+  color: #62c8f3;
+}
+
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-variable,
+.theme-dark .hljs-selector-id,
+.theme-dark .hljs-selector-class {
+  color: #ade5fc;
+}
+
+.theme-dark .hljs-string,
+.theme-dark .hljs-bullet {
+  color: #a2fca2;
+}
+
+.theme-dark .hljs-type,
+.theme-dark .hljs-title,
+.theme-dark .hljs-section,
+.theme-dark .hljs-attribute,
+.theme-dark .hljs-quote,
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-builtin-name {
+  color: #ffa;
+}
+
+.theme-dark .hljs-number,
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-bullet {
+  color: #d36363;
+}
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-literal {
+  color: #fcc28c;
+}
+
+.theme-dark .hljs-comment,
+.theme-dark .hljs-deletion,
+.theme-dark .hljs-code {
+  color: #888;
+}
+
+.theme-dark .hljs-regexp,
+.theme-dark .hljs-link {
+  color: #c6b4f0;
+}
+
+.theme-dark .hljs-meta {
+  color: #fc9b9b;
+}
+
+.theme-dark .hljs-deletion {
+  color: #333;
+}
+
+.theme-dark .hljs-addition {
+  color: #333;
+}
+
+.theme-dark .hljs a {
+  color: inherit;
+}
+
+.theme-dark .hljs a:focus,
+.theme-dark .hljs a:hover {
+  color: inherit;
+  text-decoration: underline;
+}

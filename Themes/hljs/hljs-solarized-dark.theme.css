@@ -1,0 +1,84 @@
+//META{"name":"solarized-dark.css","description":"Applies the solarized-dark theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/*
+
+Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
+
+*/
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #839496;
+}
+
+.theme-dark .hljs-comment,
+.theme-dark .hljs-quote {
+  color: #586e75;
+}
+
+/* Solarized Green */
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-addition {
+  color: #859900;
+}
+
+/* Solarized Cyan */
+.theme-dark .hljs-number,
+.theme-dark .hljs-string,
+.theme-dark .hljs-meta .hljs-meta-string,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-doctag,
+.theme-dark .hljs-regexp {
+  color: #2aa198;
+}
+
+/* Solarized Blue */
+.theme-dark .hljs-title,
+.theme-dark .hljs-section,
+.theme-dark .hljs-name,
+.theme-dark .hljs-selector-id,
+.theme-dark .hljs-selector-class {
+  color: #268bd2;
+}
+
+/* Solarized Yellow */
+.theme-dark .hljs-attribute,
+.theme-dark .hljs-attr,
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-variable,
+.theme-dark .hljs-class .hljs-title,
+.theme-dark .hljs-type {
+  color: #b58900;
+}
+
+/* Solarized Orange */
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-subst,
+.theme-dark .hljs-meta,
+.theme-dark .hljs-meta .hljs-keyword,
+.theme-dark .hljs-selector-attr,
+.theme-dark .hljs-selector-pseudo,
+.theme-dark .hljs-link {
+  color: #cb4b16;
+}
+
+/* Solarized Red */
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-deletion {
+  color: #dc322f;
+}
+
+.theme-dark .hljs-formula {
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}
+
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}

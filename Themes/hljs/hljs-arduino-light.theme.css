@@ -1,0 +1,89 @@
+//META{"name":"arduino-light.css","description":"Applies the arduino-light theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/*
+
+Arduino® Light Theme - Stefania Mellai <s.mellai@arduino.cc>
+
+*/
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+}
+
+.theme-dark .hljs,
+.theme-dark .hljs-subst {
+  color: #434f54;
+}
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-attribute,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-doctag,
+.theme-dark .hljs-name {
+  color: #00979D;
+}
+
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-code,
+.theme-dark .hljs-addition {
+  color: #D35400;
+}
+
+.theme-dark .hljs-regexp,
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-variable,
+.theme-dark .hljs-link,
+.theme-dark .hljs-selector-attr,
+.theme-dark .hljs-selector-pseudo {
+  color: #00979D;
+}
+
+.theme-dark .hljs-type,
+.theme-dark .hljs-string,
+.theme-dark .hljs-selector-id,
+.theme-dark .hljs-selector-class,
+.theme-dark .hljs-quote,
+.theme-dark .hljs-template-tag,
+.theme-dark .hljs-deletion {
+  color: #005C5F;
+}
+
+.theme-dark .hljs-title,
+.theme-dark .hljs-section {
+  color: #880000;
+  font-weight: bold;
+}
+
+.theme-dark .hljs-comment {
+  color: rgba(149,165,166,.8);
+}
+
+.theme-dark .hljs-meta-keyword {
+  color: #728E00;
+}
+
+.theme-dark .hljs-meta {
+  color: #728E00;
+  color: #434f54;
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}
+
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}
+
+.theme-dark .hljs-function {
+  color: #728E00;
+}
+
+.theme-dark .hljs-number {
+  color: #8A7B52;  
+}

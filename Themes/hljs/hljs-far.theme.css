@@ -1,0 +1,72 @@
+//META{"name":"far.css","description":"Applies the far theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/*
+
+FAR Style (c) MajestiC <majestic2k@gmail.com>
+
+*/
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+}
+
+.theme-dark .hljs,
+.theme-dark .hljs-subst {
+  color: #0ff;
+}
+
+.theme-dark .hljs-string,
+.theme-dark .hljs-attribute,
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-builtin-name,
+.theme-dark .hljs-template-tag,
+.theme-dark .hljs-template-variable,
+.theme-dark .hljs-addition {
+  color: #ff0;
+}
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-section,
+.theme-dark .hljs-type,
+.theme-dark .hljs-name,
+.theme-dark .hljs-selector-id,
+.theme-dark .hljs-selector-class,
+.theme-dark .hljs-variable {
+  color: #fff;
+}
+
+.theme-dark .hljs-comment,
+.theme-dark .hljs-quote,
+.theme-dark .hljs-doctag,
+.theme-dark .hljs-deletion {
+  color: #888;
+}
+
+.theme-dark .hljs-number,
+.theme-dark .hljs-regexp,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-link {
+  color: #0f0;
+}
+
+.theme-dark .hljs-meta {
+  color: #008080;
+}
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-title,
+.theme-dark .hljs-section,
+.theme-dark .hljs-name,
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}

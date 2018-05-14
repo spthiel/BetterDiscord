@@ -1,0 +1,84 @@
+//META{"name":"qtcreator_dark.css","description":"Applies the qtcreator_dark theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/*
+
+Qt Creator dark color scheme
+
+*/
+
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+}
+
+.theme-dark .hljs,
+.theme-dark .hljs-subst,
+.theme-dark .hljs-tag,
+.theme-dark .hljs-title {
+  color: #aaaaaa;
+}
+
+.theme-dark .hljs-strong,
+.theme-dark .hljs-emphasis {
+  color: #a8a8a2;
+}
+
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-quote,
+.theme-dark .hljs-number,
+.theme-dark .hljs-regexp,
+.theme-dark .hljs-literal {
+  color: #ff55ff;
+}
+
+.theme-dark .hljs-code
+.theme-dark .hljs-selector-class {
+  color: #aaaaff;
+}
+
+.theme-dark .hljs-emphasis,
+.theme-dark .hljs-stronge,
+.theme-dark .hljs-type {
+  font-style: italic;
+}
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-function,
+.theme-dark .hljs-section,
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-name {
+  color: #ffff55;
+}
+
+.theme-dark .hljs-attribute {
+  color: #ff5555;
+}
+
+.theme-dark .hljs-variable,
+.theme-dark .hljs-params,
+.theme-dark .hljs-class .hljs-title {
+  color: #8888ff;
+}
+
+.theme-dark .hljs-string,
+.theme-dark .hljs-selector-id,
+.theme-dark .hljs-selector-attr,
+.theme-dark .hljs-selector-pseudo,
+.theme-dark .hljs-type,
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-builtin-name,
+.theme-dark .hljs-template-tag,
+.theme-dark .hljs-template-variable,
+.theme-dark .hljs-addition,
+.theme-dark .hljs-link {
+  color: #ff55ff;
+}
+
+.theme-dark .hljs-comment,
+.theme-dark .hljs-meta,
+.theme-dark .hljs-deletion {
+  color: #55ffff;
+}

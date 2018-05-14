@@ -1,0 +1,93 @@
+//META{"name":"xt256.css","description":"Applies the xt256 theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+
+/*
+  xt256.css
+
+  Contact: initbar [at] protonmail [dot] ch
+         : github.com/initbar
+*/
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  color: #eaeaea;
+  padding: 0.5;
+}
+
+.theme-dark .hljs-subst {
+  color: #eaeaea;
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}
+
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}
+
+.theme-dark .hljs-builtin-name,
+.theme-dark .hljs-type {
+  color: #eaeaea;
+}
+
+.theme-dark .hljs-params {
+  color: #da0000;
+}
+
+.theme-dark .hljs-literal,
+.theme-dark .hljs-number,
+.theme-dark .hljs-name {
+  color: #ff0000;
+  font-weight: bolder;
+}
+
+.theme-dark .hljs-comment {
+  color: #969896;
+}
+
+.theme-dark .hljs-selector-id,
+.theme-dark .hljs-quote {
+  color: #00ffff;
+}
+
+.theme-dark .hljs-template-variable,
+.theme-dark .hljs-variable,
+.theme-dark .hljs-title {
+  color: #00ffff;
+  font-weight: bold;
+}
+
+.theme-dark .hljs-selector-class,
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-symbol {
+  color: #fff000;
+}
+
+.theme-dark .hljs-string,
+.theme-dark .hljs-bullet {
+  color: #00ff00;
+}
+
+.theme-dark .hljs-tag,
+.theme-dark .hljs-section {
+  color: #000fff;
+}
+
+.theme-dark .hljs-selector-tag {
+  color: #000fff;
+  font-weight: bold;
+}
+
+.theme-dark .hljs-attribute,
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-regexp,
+.theme-dark .hljs-link {
+  color: #ff00ff;
+}
+
+.theme-dark .hljs-meta {
+  color: #fff;
+  font-weight: bolder;
+}

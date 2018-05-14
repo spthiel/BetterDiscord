@@ -1,0 +1,97 @@
+//META{"name":"grayscale.css","description":"Applies the grayscale theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/*
+
+grayscale style (c) MY Sun <simonmysun@gmail.com>
+
+*/
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+}
+
+.theme-dark .hljs-comment,
+.theme-dark .hljs-quote {
+  color: #777;
+  font-style: italic;
+}
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-subst {
+  color: #333;
+  font-weight: bold;
+}
+
+.theme-dark .hljs-number,
+.theme-dark .hljs-literal {
+  color: #777;
+}
+
+.theme-dark .hljs-string,
+.theme-dark .hljs-doctag,
+.theme-dark .hljs-formula {
+  color: #333;
+}
+
+.theme-dark .hljs-title,
+.theme-dark .hljs-section,
+.theme-dark .hljs-selector-id {
+  color: #000;
+  font-weight: bold;
+}
+
+.theme-dark .hljs-subst {
+  font-weight: normal;
+}
+
+.theme-dark .hljs-class .hljs-title,
+.theme-dark .hljs-type,
+.theme-dark .hljs-name {
+  color: #333;
+  font-weight: bold;
+}
+
+.theme-dark .hljs-tag {
+  color: #333;
+}
+
+.theme-dark .hljs-regexp {
+    color: #333;
+}
+
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-link {
+  color: #000;
+}
+
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-builtin-name {
+  color: #000;
+  text-decoration: underline;
+}
+
+.theme-dark .hljs-meta {
+  color: #999;
+  font-weight: bold;
+}
+
+.theme-dark .hljs-deletion {
+  color: #fff;
+}
+
+.theme-dark .hljs-addition {
+  color: #000;
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}
+
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}

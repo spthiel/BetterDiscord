@@ -1,0 +1,78 @@
+//META{"name":"darcula.css","description":"Applies the darcula theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/*
+
+Darcula color scheme from the JetBrains family of IDEs
+
+*/
+
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+}
+
+.theme-dark .hljs {
+  color: #bababa;
+}
+
+.theme-dark .hljs-strong,
+.theme-dark .hljs-emphasis {
+  color: #a8a8a2;
+}
+
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-quote,
+.theme-dark .hljs-link,
+.theme-dark .hljs-number,
+.theme-dark .hljs-regexp,
+.theme-dark .hljs-literal {
+  color: #6896ba;
+}
+
+.theme-dark .hljs-code,
+.theme-dark .hljs-selector-class {
+  color: #a6e22e;
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-section,
+.theme-dark .hljs-attribute,
+.theme-dark .hljs-name,
+.theme-dark .hljs-variable {
+  color: #cb7832;
+}
+
+.theme-dark .hljs-params {
+  color: #b9b9b9;
+}
+
+.theme-dark .hljs-string {
+  color: #6a8759;
+}
+
+.theme-dark .hljs-subst,
+.theme-dark .hljs-type,
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-builtin-name,
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-selector-id,
+.theme-dark .hljs-selector-attr,
+.theme-dark .hljs-selector-pseudo,
+.theme-dark .hljs-template-tag,
+.theme-dark .hljs-template-variable,
+.theme-dark .hljs-addition {
+  color: #e0c46c;
+}
+
+.theme-dark .hljs-comment,
+.theme-dark .hljs-deletion,
+.theme-dark .hljs-meta {
+  color: #7f7f7f;
+}

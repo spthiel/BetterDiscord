@@ -1,0 +1,89 @@
+//META{"name":"obsidian.css","description":"Applies the obsidian theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/**
+ * Obsidian style
+ * ported by Alexander Marenin (http://github.com/ioncreature)
+ */
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+}
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-selector-id {
+  color: #93c763;
+}
+
+.theme-dark .hljs-number {
+  color: #ffcd22;
+}
+
+.theme-dark .hljs {
+  color: #e0e2e4;
+}
+
+.theme-dark .hljs-attribute {
+  color: #668bb0;
+}
+
+.theme-dark .hljs-code,
+.theme-dark .hljs-class .hljs-title,
+.theme-dark .hljs-section {
+  color: white;
+}
+
+.theme-dark .hljs-regexp,
+.theme-dark .hljs-link {
+  color: #d39745;
+}
+
+.theme-dark .hljs-meta {
+  color: #557182;
+}
+
+.theme-dark .hljs-tag,
+.theme-dark .hljs-name,
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-subst,
+.theme-dark .hljs-emphasis,
+.theme-dark .hljs-type,
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-selector-attr,
+.theme-dark .hljs-selector-pseudo,
+.theme-dark .hljs-addition,
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-tag,
+.theme-dark .hljs-template-variable {
+  color: #8cbbad;
+}
+
+.theme-dark .hljs-string,
+.theme-dark .hljs-symbol {
+  color: #ec7600;
+}
+
+.theme-dark .hljs-comment,
+.theme-dark .hljs-quote,
+.theme-dark .hljs-deletion {
+  color: #818e96;
+}
+
+.theme-dark .hljs-selector-class {
+  color: #A082BD
+}
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-doctag,
+.theme-dark .hljs-title,
+.theme-dark .hljs-section,
+.theme-dark .hljs-type,
+.theme-dark .hljs-name,
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}

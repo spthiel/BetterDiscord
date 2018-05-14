@@ -1,0 +1,96 @@
+//META{"name":"docco.css","description":"Applies the docco theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/*
+Docco style used in http://jashkenas.github.com/docco/ converted by Simon Madine (@thingsinjars)
+*/
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #000;
+}
+
+.theme-dark .hljs-comment,
+.theme-dark .hljs-quote {
+  color: #408080;
+  font-style: italic;
+}
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-subst {
+  color: #954121;
+}
+
+.theme-dark .hljs-number {
+  color: #40a070;
+}
+
+.theme-dark .hljs-string,
+.theme-dark .hljs-doctag {
+  color: #219161;
+}
+
+.theme-dark .hljs-selector-id,
+.theme-dark .hljs-selector-class,
+.theme-dark .hljs-section,
+.theme-dark .hljs-type {
+  color: #19469d;
+}
+
+.theme-dark .hljs-params {
+  color: #00f;
+}
+
+.theme-dark .hljs-title {
+  color: #458;
+  font-weight: bold;
+}
+
+.theme-dark .hljs-tag,
+.theme-dark .hljs-name,
+.theme-dark .hljs-attribute {
+  color: #000080;
+  font-weight: normal;
+}
+
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-variable {
+  color: #008080;
+}
+
+.theme-dark .hljs-regexp,
+.theme-dark .hljs-link {
+  color: #b68;
+}
+
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-bullet {
+  color: #990073;
+}
+
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-builtin-name {
+  color: #0086b3;
+}
+
+.theme-dark .hljs-meta {
+  color: #999;
+  font-weight: bold;
+}
+
+.theme-dark .hljs-deletion {
+}
+
+.theme-dark .hljs-addition {
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}
+
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}

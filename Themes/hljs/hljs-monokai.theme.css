@@ -1,0 +1,71 @@
+//META{"name":"monokai.css","description":"Applies the monokai theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/*
+Monokai style - ported by Luigi Maselli - http://grigio.org
+*/
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+}
+
+.theme-dark .hljs-tag,
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-strong,
+.theme-dark .hljs-name {
+  color: #f92672;
+}
+
+.theme-dark .hljs-code {
+  color: #66d9ef;
+}
+
+.theme-dark .hljs-class .hljs-title {
+  color: white;
+}
+
+.theme-dark .hljs-attribute,
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-regexp,
+.theme-dark .hljs-link {
+  color: #bf79db;
+}
+
+.theme-dark .hljs-string,
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-subst,
+.theme-dark .hljs-title,
+.theme-dark .hljs-section,
+.theme-dark .hljs-emphasis,
+.theme-dark .hljs-type,
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-builtin-name,
+.theme-dark .hljs-selector-attr,
+.theme-dark .hljs-selector-pseudo,
+.theme-dark .hljs-addition,
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-tag,
+.theme-dark .hljs-template-variable {
+  color: #a6e22e;
+}
+
+.theme-dark .hljs-comment,
+.theme-dark .hljs-quote,
+.theme-dark .hljs-deletion,
+.theme-dark .hljs-meta {
+  color: #75715e;
+}
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-doctag,
+.theme-dark .hljs-title,
+.theme-dark .hljs-section,
+.theme-dark .hljs-type,
+.theme-dark .hljs-selector-id {
+  font-weight: bold;
+}

@@ -1,0 +1,88 @@
+//META{"name":"foundation.css","description":"Applies the foundation theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/*
+Description: Foundation 4 docs style for highlight.js
+Author: Dan Allen <dan.j.allen@gmail.com>
+Website: http://foundation.zurb.com/docs/
+Version: 1.0
+Date: 2013-04-02
+*/
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+}
+
+.theme-dark .hljs-link,
+.theme-dark .hljs-emphasis,
+.theme-dark .hljs-attribute,
+.theme-dark .hljs-addition {
+  color: #070;
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}
+
+.theme-dark .hljs-strong,
+.theme-dark .hljs-string,
+.theme-dark .hljs-deletion {
+  color: #d14;
+}
+
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}
+
+.theme-dark .hljs-quote,
+.theme-dark .hljs-comment {
+  color: #998;
+  font-style: italic;
+}
+
+.theme-dark .hljs-section,
+.theme-dark .hljs-title {
+  color: #900;
+}
+
+.theme-dark .hljs-class .hljs-title,
+.theme-dark .hljs-type {
+  color: #458;
+}
+
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-variable {
+  color: #336699;
+}
+
+.theme-dark .hljs-bullet {
+  color: #997700;
+}
+
+.theme-dark .hljs-meta {
+  color: #3344bb;
+}
+
+.theme-dark .hljs-code,
+.theme-dark .hljs-number,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag {
+  color: #099;
+}
+
+.theme-dark .hljs-regexp {
+  color: #880088;
+}
+
+.theme-dark .hljs-symbol {
+  color: #990073;
+}
+
+.theme-dark .hljs-tag,
+.theme-dark .hljs-name,
+.theme-dark .hljs-selector-id,
+.theme-dark .hljs-selector-class {
+  color: #007700;
+}

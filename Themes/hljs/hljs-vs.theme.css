@@ -1,0 +1,69 @@
+//META{"name":"vs.css","description":"Applies the vs theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/*
+
+Visual Studio-like style based on original C# coloring by Jason Diamond <jason@diamond.name>
+
+*/
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: black;
+}
+
+.theme-dark .hljs-comment,
+.theme-dark .hljs-quote,
+.theme-dark .hljs-variable {
+  color: #008000;
+}
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-name,
+.theme-dark .hljs-tag {
+  color: #00f;
+}
+
+.theme-dark .hljs-string,
+.theme-dark .hljs-title,
+.theme-dark .hljs-section,
+.theme-dark .hljs-attribute,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-template-tag,
+.theme-dark .hljs-template-variable,
+.theme-dark .hljs-type,
+.theme-dark .hljs-addition {
+  color: #a31515;
+}
+
+.theme-dark .hljs-deletion,
+.theme-dark .hljs-selector-attr,
+.theme-dark .hljs-selector-pseudo,
+.theme-dark .hljs-meta {
+  color: #2b91af;
+}
+
+.theme-dark .hljs-doctag {
+  color: #808080;
+}
+
+.theme-dark .hljs-attr {
+  color: #f00;
+}
+
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-link {
+  color: #00b0e8;
+}
+
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}
+
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}

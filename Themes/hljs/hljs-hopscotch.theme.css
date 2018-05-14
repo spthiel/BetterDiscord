@@ -1,0 +1,84 @@
+//META{"name":"hopscotch.css","description":"Applies the hopscotch theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/*
+ * Hopscotch
+ * by Jan T. Sott
+ * https://github.com/idleberg/Hopscotch
+ *
+ * This work is licensed under the Creative Commons CC0 1.0 Universal License
+ */
+
+/* Comment */
+.theme-dark .hljs-comment,
+.theme-dark .hljs-quote {
+  color: #989498;
+}
+
+/* Red */
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-variable,
+.theme-dark .hljs-attribute,
+.theme-dark .hljs-tag,
+.theme-dark .hljs-name,
+.theme-dark .hljs-selector-id,
+.theme-dark .hljs-selector-class,
+.theme-dark .hljs-regexp,
+.theme-dark .hljs-link,
+.theme-dark .hljs-deletion {
+  color: #dd464c;
+}
+
+/* Orange */
+.theme-dark .hljs-number,
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-builtin-name,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-type,
+.theme-dark .hljs-params {
+  color: #fd8b19;
+}
+
+/* Yellow */
+.theme-dark .hljs-class .hljs-title {
+  color: #fdcc59;
+}
+
+/* Green */
+.theme-dark .hljs-string,
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-addition {
+  color: #8fc13e;
+}
+
+/* Aqua */
+.theme-dark .hljs-meta {
+  color: #149b93;
+}
+
+/* Blue */
+.theme-dark .hljs-function,
+.theme-dark .hljs-section,
+.theme-dark .hljs-title {
+  color: #1290bf;
+}
+
+/* Purple */
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag {
+  color: #c85e7c;
+}
+
+.theme-dark .hljs {
+  display: block;
+  color: #b9b5b8;
+  padding: 0.5em;
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}
+
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}

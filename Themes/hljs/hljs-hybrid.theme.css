@@ -1,0 +1,100 @@
+//META{"name":"hybrid.css","description":"Applies the hybrid theme to codeblocks","author":"hljs [spthiel]","version":"1.0.0"}*//{}
+
+/*
+
+vim-hybrid theme by w0ng (https://github.com/w0ng/vim-hybrid)
+
+*/
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+}
+
+/*selection color*/
+.theme-dark .hljs::selection,
+.theme-dark .hljs span::selection {
+}
+
+.theme-dark .hljs::-moz-selection,
+.theme-dark .hljs span::-moz-selection {
+}
+
+/*foreground color*/
+.theme-dark .hljs {
+  color: #c5c8c6;
+}
+
+/*color: fg_yellow*/
+.theme-dark .hljs-title,
+.theme-dark .hljs-name {
+  color: #f0c674;
+}
+
+/*color: fg_comment*/
+.theme-dark .hljs-comment,
+.theme-dark .hljs-meta,
+.theme-dark .hljs-meta .hljs-keyword {
+  color: #707880;
+}
+
+/*color: fg_red*/
+.theme-dark .hljs-number,
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-deletion,
+.theme-dark .hljs-link {
+ color: #cc6666
+}
+
+/*color: fg_green*/
+.theme-dark .hljs-string,
+.theme-dark .hljs-doctag,
+.theme-dark .hljs-addition,
+.theme-dark .hljs-regexp,
+.theme-dark .hljs-selector-attr,
+.theme-dark .hljs-selector-pseudo {
+  color: #b5bd68;
+}
+
+/*color: fg_purple*/
+.theme-dark .hljs-attribute,
+.theme-dark .hljs-code,
+.theme-dark .hljs-selector-id {
+ color: #b294bb;
+}
+
+/*color: fg_blue*/
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-tag {
+ color: #81a2be;
+}
+
+/*color: fg_aqua*/
+.theme-dark .hljs-subst,
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-tag,
+.theme-dark .hljs-template-variable {
+  color: #8abeb7;
+}
+
+/*color: fg_orange*/
+.theme-dark .hljs-type,
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-builtin-name,
+.theme-dark .hljs-quote,
+.theme-dark .hljs-section,
+.theme-dark .hljs-selector-class {
+  color: #de935f;
+}
+
+.theme-dark .hljs-emphasis {
+  font-style: italic;
+}
+
+.theme-dark .hljs-strong {
+  font-weight: bold;
+}
