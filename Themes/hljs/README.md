@@ -1,15 +1,17 @@
 # **IMPORTANT**
 
-**I did not make any of the themes.  
+**I did __not__ make any of the themes.  
 I just made them useable for BetterDiscord users.**
 
 <br><br><br><br>
 
+# Notes
+
+- All images are clickable and will lead to the theme
+- All themes can also be used with `@import` the links are `https://spthiel.github.io/BetterDiscord/Themes/hljs/themes/<filename>.theme.css`
+
 # Themes
 
-(All images are clickable to go to the theme)
-
-**List:**
 - [Discords Default](#1-discords-default)
 - [Agate](#2-agate)
 - [Androidstudio](#3-androidstudio)
