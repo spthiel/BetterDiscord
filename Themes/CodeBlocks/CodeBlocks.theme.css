@@ -236,3 +236,23 @@
   margin-bottom: 4px;
 
 }
+
+/* New version */
+
+.da-message .da-markup pre code:before {
+
+  position: relative;
+  display: block;
+  top: 0;
+  text-align: center;
+  width: auto;
+  color: rgba(255, 98, 98, 0.99);
+  background-color: rgba(0,0,0,.5);
+  border: 2px solid black;
+  border-radius: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-top: 0px !important;
+  margin-bottom: 4px;
+
+}
